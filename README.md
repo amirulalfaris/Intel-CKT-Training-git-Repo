@@ -7,11 +7,11 @@
 + **[Day 1 - Day 1 Fundamentals of VLSI Design and overview of Sand-to-Silicon](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-1)**
   <details><summary> Theory </summary>
   
-   [Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo##theory---fundamentals-of-vlsi-design-and-overview-of-sand-to-silicon)
+   [Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---fundamentals-of-vlsi-design-and-overview-of-sand-to-silicon)
    </details>
    <details><summary> Lab </summary>
    
-   [Lab - Setup Labs](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo##lab---setup-labs)
+   [Lab - Setup Labs](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs)
    </details>
 
 ## Day 1
