@@ -4,7 +4,7 @@
 
 ## Table Of Content 
  
-+ **[Day 1 - Day 1 Fundamentals of VLSI Design and overview of Sand-to-Silicon](https://github.com/amirulalfaris/Test#day-1)**
++ **[Day 1 - Day 1 Fundamentals of VLSI Design and overview of Sand-to-Silicon](https://github.com/amirulalfaris/Intel-CKT-Trainingt#day-1)**
   <details><summary> Theory </summary>
   
    [Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon](https://github.com/amirulalfaris/Test#theory---fundamentals-of-vlsi-design-and-overview-of-sand-to-silicon)
