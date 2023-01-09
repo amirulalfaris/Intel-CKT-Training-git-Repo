@@ -36,7 +36,7 @@ From system aprroach ( Ex. Motherboard ) --> Chip to Wafer (Ex Central of the ch
 
 From the evolution of single transistor --> Very Large Scale Integration (> 20,000 transistor ) --> System on Chip (SOC -Multiple IP ) --> System in Package (SiP - Heterogeneous Integration )
 
-* **Moore's Law** - Number of trasistor in an integated Chip (IC) will doubles about every two years. Size will be reduce to 1/(Square root of 2)
+* **Moore's Law** - Number of trasistor in an integated Chip (IC) will doubles about every two years. Size will be reduce to $1/sqrt{2}$
 
 </details>
 
