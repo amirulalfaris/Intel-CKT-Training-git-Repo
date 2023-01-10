@@ -19,8 +19,9 @@
   
  [Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---analog-vlsi-design-flow-and-cmos-fabrication-process)
   </details>
-  <details><summary> Labs </summary> 
-  [Assignment](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs-1)
+  <details><summary> Labs </summary>
+  
+   [Assignment day 2 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs-1)
   </details> 
 
 ## Day 1
@@ -239,9 +240,9 @@ From the evolution of single transistor --> Very Large Scale Integration (> 20,0
    
    </details>
    
-   ## Lab - Setup Labs 
+   ## Lab - Assignment Day 2
 
-<details><summary> Assignment  </summary>
+<details><summary> Assignment day 2  </summary>
  
  [Assignment day 2](link)
 
