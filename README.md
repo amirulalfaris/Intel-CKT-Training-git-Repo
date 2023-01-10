@@ -14,7 +14,7 @@
    [Lab - Setup Labs](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs)
    </details>
    
-+ **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](link)**
++ **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-2)**
 
   <details><summary> Theory </summary>
  [Analog VLSI Design Flow and CMOS Fabrication Process](link)
