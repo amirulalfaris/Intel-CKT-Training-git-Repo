@@ -17,7 +17,12 @@
 + **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-2)**
 
   <details><summary> Theory </summary>
- [Analog VLSI Design Flow and CMOS Fabrication Process](link)
+ [Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---analog-vlsi-design-flow-and-cmos-fabrication-process)
+ 
+ </details>
+ 
+ <details><summary> Labs </summary> 
+ [Assignment](link)
  
  </details>
 
@@ -235,7 +240,15 @@ From the evolution of single transistor --> Very Large Scale Integration (> 20,0
    
    + Metrology is basically more to quality assurace methods by calibrate and measure the resulting parts in the procduction process .
    
+   </details>
    
- <
+   ## Lab - Setup Labs 
+
+<details><summary> Assignment  </summary>
+ 
+ [Assignment day 2](link)
+
+</details>
+ 
  
  
