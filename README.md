@@ -171,14 +171,38 @@ From the evolution of single transistor --> Very Large Scale Integration (> 20,0
 ![image](https://user-images.githubusercontent.com/121993910/211268935-e6c404c5-86bd-4547-b780-e778591b2118.png)
 
  [Reference taken from Wiki Page](https://en.wikipedia.org/wiki/Photolithography) 
+   
+  **3.Well and Channel Formation**
+   
+  <img width="570" alt="image" src="https://user-images.githubusercontent.com/121993910/211452116-8f012552-2ae0-4c23-b338-6e64dccb493f.png">
+
+   + **N-well / P-well Process** is where the n-type diffusion is done to a p-type subtrade or p-type diffusion is done on a n-type substrate respectively .
+   + **The twin well process** is where NMOS and PMOS transitor are developed over the wafer by simulataneous diffusion over an epitaxial growth base rather than a substrate . This will allow the optimization of each transistor type . 
+   + **Triple well process** NMOS formed by n+ on p-well, which sits inside a n-well, which further sits on the substrate. PMOS formed by p+ on n-well, which sits on the substrate. This allow a good isolation between analog and digital blocks in mixed signal chips and also to isolate high density dynamic memory from logic .
+   
+ **4.Silicon Dioxide** (SiO2) 
+   
+   + The purpose of this process is to create a silicon dioxide layer on top of the silicon surface . Can be done using : 
+   
+   |Wet Oxidation | Dry Oxidation |
+   |---|---|
+   |900-1000 Degree Celcius | In the region of 1200 Degree Celcius | 
+   |Rapid Process | Form a better quality oxide |
+   |Form a thick field layer oxide | Form a thin oxide , highly controlled gate oxide |
+   
+   + **Atomic Layer Deposition (ALD )** - Another method to deposite the silicon dioxide on top of the subtrate or surface . Think layer of Chemical A is introduce to a surface and chemical B is introduce afterwards to produce a thin layer of the required layer . 
+   
+   **5.Isolation** 
+   
+   + solation between two adjacent transistors in CMOS circuits is necessary to isolate n channel and p channel transistors in order to avoid the undesirable parasitic currents between the transistors.
+   + Example process of isolation is Local Oxidation of Silicon(LOCOS) or Shallow Trench Isolation (STI)
+   + STI is introdued due to some problem with LOCOS process which is the transition between thick and thin layer oxide require some extended so called bird beak .
+   
+   ++6.Gate Oxide **
+   
+   + One of the common process to form the gate oxide in the transitor .
+   + The gate oxide is a layer that seperate the gate termincal of Mosfet from the source and drain terminal as well the conductive channel that connect source and drain when the MOSFET is turned on . 
+   
+   
  
- ### **Overview**
-From system aprroach ( Ex. Motherboard ) --> Chip to Wafer (Ex Central of the chip called die (where all the fabricated components are inside)) --> Inside the die which containts all the components (Memory (RAM) ,Memory controller , Analog and RF(PLL,LDO,VCO .etc), Digital (decoder, register, fsm .etc ) seperate into each partition . 
-
-![motherboard](https://user-images.githubusercontent.com/121993910/210926862-bf94c5c2-8f1f-47e7-b3f0-7225b1c5525d.png)
-
-![Chip](https://user-images.githubusercontent.com/121993910/210927257-c5732d1f-3704-4009-8404-da69344cdff5.png)
-
-<img width="499" alt="image" src="https://user-images.githubusercontent.com/121993910/210927824-b5e2c25f-4944-4010-a5ad-8bc93320051c.png">
-
-</details>  
+ 
