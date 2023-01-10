@@ -22,7 +22,7 @@
  </details>
  
  <details><summary> Labs </summary> 
- [Assignment](link)
+ [Assignment](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs-1)
  
  </details>
 
