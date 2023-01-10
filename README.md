@@ -16,12 +16,10 @@
    
 + **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-2)**
   <details><summary> Theory </summary>
-  
- [Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---analog-vlsi-design-flow-and-cmos-fabrication-process)
+   [Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---analog-vlsi-design-flow-and-cmos-fabrication-process)
     </details>
     <details><summary> Lab </summary>
-  
-   [Assignment day 2 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---assignment-day-2)
+     [Assignment day 2 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---assignment-day-2)
      </details> 
 
 ## Day 1
