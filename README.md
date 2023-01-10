@@ -18,11 +18,11 @@
   <details><summary> Theory </summary>
   
  [Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---analog-vlsi-design-flow-and-cmos-fabrication-process)
-  </details>
-  <details><summary> Labs </summary>
+    </details>
+    <details><summary> Lab </summary>
   
-   [Assignment day 2 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs-1)
-  </details> 
+   [Assignment day 2 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---assignment-day-2)
+     </details> 
 
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
