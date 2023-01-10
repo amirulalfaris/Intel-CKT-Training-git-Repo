@@ -14,7 +14,7 @@
    [Lab - Setup Labs](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs)
    </details>
    
-   + **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](link)**
++ **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](link)**
 
   <details><summary> Theory </summary>
  [Analog VLSI Design Flow and CMOS Fabrication Process](link)
@@ -198,11 +198,44 @@ From the evolution of single transistor --> Very Large Scale Integration (> 20,0
    + Example process of isolation is Local Oxidation of Silicon(LOCOS) or Shallow Trench Isolation (STI)
    + STI is introdued due to some problem with LOCOS process which is the transition between thick and thin layer oxide require some extended so called bird beak .
    
-   ++6.Gate Oxide **
+  **6.Gate Oxide**
    
    + One of the common process to form the gate oxide in the transitor .
    + The gate oxide is a layer that seperate the gate termincal of Mosfet from the source and drain terminal as well the conductive channel that connect source and drain when the MOSFET is turned on . 
    
+   **7.Gate and Source/Drain Formations**
    
++ Grow gate oxide wherever transistors are required (area = source + drain + gate)––elsewhere there will be thick oxide or trench isolation.
++ Deposit polysilicon on chip
++ Pattern polysilicon (both gates and interconnect)
++ Etch exposed gate oxide—i.e., the area of gate oxide where transistors are required that was not covered by polysilicon; at this stage, the chip has windows down to the well or substrate wherever a source/drain diffusion is required
++ Implant pMOS and nMOS source/drain regions through iom bombartment . 
+   
+   <img width="641" alt="image" src="https://user-images.githubusercontent.com/121993910/211474135-0a73b5ee-cdda-4aa4-ab92-5d1d589a8fdf.png">
+   
+   **8.Contact and Metallization**
+   
+   + Connections must be made to link the circuits together . This is how the metallization process comes into . So called the interconnects
+
+   <img width="322" alt="image" src="https://user-images.githubusercontent.com/121993910/211474607-c86d1553-b633-43d7-94af-fe755ecd3086.png">
+   
+   *Metal Deposition is done to link all the trasnsitor together to form a circuit .*
+   
+   + Other important application of metallization is the top-level metal that provides a connection to the outside world. To reduce interconnection resistance and save area on a chip, multilevel metallization.
+   + Metallization is also used to produce rectifying (Schottky barrier) contacts, guard rings, and diffusion barriers between reacting metallic films.
+   + [Reference link for metallization ](https://www.circuitstoday.com/metallization-process)
+
+   
+   **9.Passivation**
+   
+   + After metellization process passivation is done afterwards, passivation is a process of where we add the protective glass layer to prevents the ingress of contaminants or to protect the internal semiconductor devices.
+   + The overglass cuts which is the opening in the passivation layer is required to allow the connection of the I/O pads and test the probe points . 
+   
+   **10.Metrology**
+   
+   + Metrology is basically more to quality assurace methods by calibrate and measure the resulting parts in the procduction process .
+   
+   
+ <
  
  
