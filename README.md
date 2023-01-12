@@ -370,7 +370,41 @@ Thick oxide and there is a poly it will become a resistor.
   
   + Not being done in the submicron process .
   + Lightly dope is being done to control the deplettion region (less), Kinetic energy / Electric field (less) and to avoid the impact ionization .
-  + 
+  + Impact Ionization is where the hot electron impact the drain causing dislodging holes , these holes are swept towards negatively charged substrate causing a current flowing in the subtrate. 
+  
+  <img width="300" alt="image" src="https://user-images.githubusercontent.com/121993910/211962978-b006a732-d553-424a-a0c5-6866381a0180.png">
+  
+  **6. Sidewall spacer **
+  
+  <img width="600" alt="image" src="https://user-images.githubusercontent.com/121993910/211963731-97fdd5a7-67c9-42df-99d6-f82abef6877f.png">
+
+  + typically is a Silicon Nitrade .
+  + Prevent the drain and source next to the channel from becoming a heavily doped . 
+  
+  **7. Implantation of Heavily doped source and drain**
+  
+  <img width="585" alt="image" src="https://user-images.githubusercontent.com/121993910/211963901-a9680fc0-0bcc-4226-9d33-b50378cf6fb0.png">
+
+  + at the spacer side we can see the heavily doped part is not extending towards the drain  and source near the channel thats helps to reducing the overlap capacitance and impact ionization . 
+  + This also helps to able to get a good ohmic contact . 
+  
+  **8.Siliciding ( Salicide and Polyside) **
+  
+<img width="591" alt="image" src="https://user-images.githubusercontent.com/121993910/211965246-933e0c72-8030-49de-94af-83d23f9184e2.png">
+  
+   + To create a good ohmic contact between the contact-drain and contact-source . 
+   + polyside helps to reduce the resistance of the poly 
+   + Added or used in the Deep submicron process but no in the submicron . 
+  
+  **9. Intermediate Oxide Layer**
+  
+  <img width="591" alt="image" src="https://user-images.githubusercontent.com/121993910/211965300-70ce54bd-ccf7-4f1c-82b2-29b5f87f0f95.png"
+       
+   + Next step will be more on the back end process . 
+   + Oxie layer is used to 
+   
+
+  
   
  </details>
  
