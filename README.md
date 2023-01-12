@@ -21,6 +21,14 @@
     <details><summary> Lab </summary>
      [Assignment day 2 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---assignment-day-2)
      </details> 
+     
+ + **[Day 3 - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology](link)**
+    <details><summary> Theory </summary>
+   [CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology}(link)
+    </details>
+    <details><summary> Lab </summary>
+     [Assignment day 3 ](link)
+     </details>     
 
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
@@ -245,6 +253,132 @@ From the evolution of single transistor --> Very Large Scale Integration (> 20,0
  [Assignment day 2](link)
 
 </details>
+ 
+ ## Day 3
+## Theory - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep-Submicron (UDSM) Technology 
+<details><summary> Introduction to DSM </summary>
+
+### **Overview**
+
++ As transistor size is getting smaller and smaller , more challanges is introduced  towards fabricating the cmos such as **Hot carrier injection**, **Punch Through Effect**, more noise and many more .This cause the submicron process is not realiable anymore and the Deep-Submicron process is introduced . 
+ 
++ One disadvatange of the submicron process is during the isolation process , as the transistor getting smaller , the used of reverse bias pn junctions for isolation  becomes impractical .
+ 
+ <img width="454" alt="image" src="https://user-images.githubusercontent.com/121993910/211742121-70977f3e-188a-4db7-8ad8-5b4e4bb303d5.png">
+
+ 
++ LOCOS techniqued is used in the isolation process . The limitation of this technique is due to the bird beak effect which extend some distance literally on the transition of the thick and thin oxide . The surface area also is lost due to this enroachment .
+ 
++ The great things about LOCOS is it **takes a simple process flow**, **High oxide quality procduced** 
+ 
+ <img width="251" alt="image" src="https://user-images.githubusercontent.com/121993910/211741488-56ac5923-5e25-44c9-9e95-b922b475e7dc.png">
+
+ *LOCOS process step *
+
++ Due to the limitation from the LOCOS , Sallow Trench Isolation (STI) Technology is introduced. 
++ STI allows the closer spacing of transistor which eliminate the depletion region at the surface and the bird's beak effect .
++ STI process able to grow a think layer of oxide compare to LOCOS which create the bird's beak shape .'
++ Due to allowing a smaller isolation region, STI is suitable to be used on increase density in a small area .
++ But STI require more step process needed  and the oxide quality is not good compared to LOCOS . 
+
+  <img width="493" alt="image" src="https://user-images.githubusercontent.com/121993910/211743541-bea7b9f2-28f2-4412-8a07-16bbed734c52.png">
+  
+*How STI able to solve LOCOS problem by allowing closer spacing transistor*
+ 
+ <img width="238" alt="image" src="https://user-images.githubusercontent.com/121993910/211745178-b58e5f9e-7576-4161-b22b-5dbae49c6c13.png">
+
+ *Illustration step by step of STI Process* 
+ 
+ 
+</details>
+ 
+<details><summary> Deep SubMircron CMOS Technology </summary>
+ 
+ Due to the addition of NMOS and PMOS transitor , DSM provides : 
+ 
+ + A deep n-well that can be used to lower down the substrade noise coupling . 
+ + A MOS varactor , that can be utilized as voltage controlled oscillators .
+ + Different type of resistor : 
+   + Diffused and/or implanted resitor - Diffused resistors are resistors that are fabricated through p-type diffusion into an n-type background and the surface geometry such as the length, width and the diffused impurity profile determine the resistance value . Sheet resistance is the parameter to defining this resistance . 
+   + Well resitors - The surface geometry such as the length, width and the diffused impurity profile determine the resistance value . Will give a very high resistance value .
+   + Poly Resistor - widely used as an important device in CMOS analog circuit design . Would give a small amout of resitance .
+   + Metal Resistor - due to the interconnection of metal . Typicaly has a very small among of resitance by still we can do it as resistor . The thicker the thickness of the metal the lesser the resistance will be . Metal thickness increases as the metal number increase . Ex . metal 1 will be less thicker compared to metal 6. 
+ 
+  <img width="684" alt="image" src="https://user-images.githubusercontent.com/121993910/211750585-826981f0-684e-4788-aa4b-567928015f63.png">
+ 
+ + Metals that can be used as inductors, capacitors and transmission line . 
+ 
+ <img width="384" alt="image" src="https://user-images.githubusercontent.com/121993910/211754638-ec3f2194-127d-484e-9409-a225c03a650b.png">
+ 
+ *Capacitor formed through poly-poly layer and metal instulator metal.* 
+ + Capacitance formed is affected by the distance . The longer the distance less capacitance will be generated  .
+ + The area also would affect the capactiance . 
+
+Thin oxide  and there is a poly it will become a transistor. 
+Thick oxide and there is a poly it will become a resistor. 
+
+</details>
+ 
+ <details><summary> Typical Deep Submicron CMOS Technology </summary>
+  
+ Steps for a DSM CMOS process . 
+  **1.** p and n wells formation .
+  **2.** Shallow trench isolation - Need isolation between nmos and pmos . Used STI instead of LOCOS 
+  **3.** Threshold shift and anti punch through implant - doping/implantation that will alter the threshold voltage ( to avoid the punchthrough effect )
+  **4.** Thin oxide and gate polysilicon - typicaly putting the gate oxide 
+  **5.** Lightly doped drains and sources. - To avoid bad adjacent between the drain and source ( to reduce the depletion region )
+  **6.** Sidewall spacer . ( Introduced in DSM to avoid unnesarry extension of source and drain ) 
+  **7.** Heavily doped drains and sources 
+  **8.** Siliciding ( Salicide and Polycide) - To increase the conductitivy between drain and source by achieving a good ohmic contact . 
+  **9.** Bottom metal, tungsten plugs, and oxide - bottom metal = metal 1 , tungsten plug = tungsten contact  
+  **10.** Higher level metals, tungsten plugs/vias, and oxide - metal 2,3 
+  **11.** Top level metal, vias and protective oxide.
+
+ 
+   **Starting Material.** 
+ + Substrade is highly doped to get a good conductor . 
+ 
+  **1. p and n wells formation.**
+  <img width="606" alt="image" src="https://user-images.githubusercontent.com/121993910/211956519-f36b01fe-bb92-4876-b9bf-5f46dfa54197.png">
+ 
+  + photolithography is done as usual to pattern the substrate . 
+  + p-well implanct and  Diffusion and n-well implant and Diffusion is done to create the p well and n well respectively. 
+  + Diffusion - process of adding impurities atoms from a region with high concentration to a region of low concentration. The dopants or impurity atoms are added to the silicon (semiconductor material), which changes its resistivity. The process of diffusion is highly dependent on the temperature.
+  + Implantation - Heavy electric field is used to plan the atom/material . a process of adding dopant to the silicon substrate to enable the conductivity .
+  
+  **2. Shallow Trench Isolation**
+ 
+  + Electrically isolates one region or transitor from another which prevents electric current leakage between adjacent semiconductor device components .
+  
+  <img width="583" alt="image" src="https://user-images.githubusercontent.com/121993910/211957232-b99fe089-d678-4cb2-a470-edc49c53f0c8.png">
+  
+  **3. Threshold shift and anti punch through implant**
+ 
+  <img width="825" alt="image" src="https://user-images.githubusercontent.com/121993910/211958853-8bdd8259-9312-407b-958b-83f93b709f3f.png">
+  
+  + P thershold implant is used balance to the threshold voltage or control the threshold voltage . 
+  + implantation also is used to create a highly doped region to avoid the punch through effect . By doing this the depletion region will become more smaller . 
+  + Punch through effect is where the depletion region of the source terminal and the depletion region on the drain terminal is meet with each other .
+  
+  **4. Thin Oxide and Polysilicon Gate**
+  
+  <img width="591" alt="image" src="https://user-images.githubusercontent.com/121993910/211959978-41c9f5fd-cda0-4777-8c9f-3d94a3520d34.png">
+
+  Same type of process in submicron .
+  
+  **5. Lightly DOpen Source and Drain**
+  
+  + Not being done in the submicron process .
+  + Lightly dope is being done to control the deplettion region (less), Kinetic energy / Electric field (less) and to avoid the impact ionization .
+  + 
+  
+ </details>
+ 
+
+
+ 
+ 
+ 
  
  
  
