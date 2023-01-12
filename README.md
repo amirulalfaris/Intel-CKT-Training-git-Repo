@@ -400,19 +400,61 @@ Thick oxide and there is a poly it will become a resistor.
   
   <img width="591" alt="image" src="https://user-images.githubusercontent.com/121993910/211965300-70ce54bd-ccf7-4f1c-82b2-29b5f87f0f95.png"
        
-   + Next step will be more on the back end process . 
-   + Oxie layer is used to 
+   + Next step will be more on the back end process which where the connection from the drain and source towards the metal/outside . 
+   + Oxide layer is used to cover the transitor and to planarize the surface .
+   + A hole on the oxide will be done for contact purposes to the outside .
    
+   **10 . First level metal**
+   
+   <img width="584" alt="image" src="https://user-images.githubusercontent.com/121993910/211969916-42405cf8-2553-4339-a88a-c9ec5e9c9305.png">
 
+   + Through via of tungsten contact to connect the device,well and subtrade to the first metal layer . 
+   + The tungsten oxide film produced by the target sputtering deposition method has the advantages of high density, good adhesion, and good corrosion resistance, so it is suitable for use in semiconductor chips. Has a good thermal characteristic .
+   
+   **11. Second Level metal **
+
+  <img width="609" alt="image" src="https://user-images.githubusercontent.com/121993910/211971147-278b6cc3-f5ed-48b3-af0b-052b95374e3d.png"> 
+  <img width="463" alt="image" src="https://user-images.githubusercontent.com/121993910/211971406-594db2cc-9694-4d8e-a939-d5a848aea47a.png">
+
+  + The step 10 is repeated until the top metal layer . 
+  + The top metal layer usually is thicker than the first or second metal layer due to the amount of current it need to bring . Usually is related to the power routing or transmission line purposes. The top metal layer also can be used as capacitor or inductor formation .
+  + The proctective insulator layer act as a passivation to protect the top metal connection to outside  .
+  
+  **Summary**
+  
+  + Able to adress the excessive depletion region in junction isolation . 
+  + metal levels is more when getting into the ultra deep submicron technology or getting into deeper technology .
+  + Lightly doped helps to avoid impact ionization , junction capacitance hence improving analog performance . 
   
   
+    
  </details>
  
+ <details><summary> Ultra Deep (UDSM) CMOS technology </summary>
+ 
+ **USDM Technology**
+ 
+ + Lmin < 0.1 Microncs.
+ + Minimum feature size less than 100 nanometers.
+ + Specialized processing is used to increase drive capability and maintain low off currrents 
+ 
+ 
+ <img width="462" alt="image" src="https://user-images.githubusercontent.com/121993910/211990892-44925d3d-a9bb-4648-a3ae-76734a71a762.png">
 
+ + More level of metals - analog circuit are very sensitive , therefore by adding more levels of metals helps to reduce the interference between the top level metal and low level metal. 
+ + Higher capacitance density - Can create more capacitance as more level of metals is introduced. 
+ + More speed - use lower length/size of transitor to achive speed by doing a custom design in analog part . 
+ 
+ 
+   </details>
+ 
+    ## Lab - Assignment Day 3
 
+<details><summary> Assignment day 3  </summary>
  
- 
- 
+ [Assignment day 3](link)
+
+</details>
  
  
  
