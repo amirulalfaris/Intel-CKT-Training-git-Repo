@@ -11,15 +11,16 @@
    </details>
    <details><summary> Lab </summary>
    
-    [Lab - Setup Labs](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---setup-labs)
+    [Lab - Assignemnt](https://docs.google.com/presentation/d/1Cm7hb_-vpqZq_iwY7fwXAXaH0rOmg-2f/edit?usp=share_link&ouid=110064100622421144823&rtpof=true&sd=true)
    </details>
    
 + **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-2)**
   <details><summary> Theory </summary>
    [Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---analog-vlsi-design-flow-and-cmos-fabrication-process)
-    </details>
-    <details><summary> Lab </summary>
-     [Assignment day 2 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#lab---assignment-day-2)
+     </details>
+     <details><summary> Assignment </summary>
+     
+     [Assignment day 2](https://docs.google.com/document/d/1LUZd35zsOoNcMLgwo44L24rsoK-OZ_hb/edit?usp=share_link&ouid=110064100622421144823&rtpof=true&sd=true)
      </details> 
      
  + **[Day 3 - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology](link)**
@@ -90,14 +91,6 @@ From the evolution of single transistor --> Very Large Scale Integration (> 20,0
 
 
 <img width="568" alt="image" src="https://user-images.githubusercontent.com/121993910/210962083-1d15852b-8314-4345-bb9d-9f1afd6fc52a.png">
-
-</details>
-
-### Lab - Setup Labs 
-
-<details><summary> steps to enable labs </summary>
- 
- [Set Up labs](https://docs.google.com/document/d/1_Qb8Xi2J0ZACvAwTW9h1-bFJzuUHAwnI/edit)
 
 </details>
 
@@ -246,13 +239,7 @@ From the evolution of single transistor --> Very Large Scale Integration (> 20,0
    
    </details>
    
-   ## Lab - Assignment Day 2
-
-<details><summary> Assignment day 2  </summary>
- 
- [Assignment day 2](link)
-
-</details>
+  </details>
  
  ## Day 3
 ## Theory - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep-Submicron (UDSM) Technology 
