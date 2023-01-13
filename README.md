@@ -23,7 +23,7 @@
      [Assignment day 2](https://docs.google.com/document/d/1LUZd35zsOoNcMLgwo44L24rsoK-OZ_hb/edit?usp=share_link&ouid=110064100622421144823&rtpof=true&sd=true)
      </details> 
      
- + **[Day 3 - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology](link)**
+ + **[Day 3 - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-3)**
     <details><summary> Theory </summary>
    [CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology}(link)
     </details>
