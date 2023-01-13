@@ -25,7 +25,7 @@
      
  + **[Day 3 - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-3)**
     <details><summary> Theory </summary>
-   [CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology}(link)
+   [CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology}(https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-3)
     </details>
     <details><summary> Lab </summary>
      [Assignment day 3 ](link)
@@ -435,12 +435,7 @@ Thick oxide and there is a poly it will become a resistor.
  
    </details>
  
-    ## Lab - Assignment Day 3
-
-<details><summary> Assignment day 3  </summary>
- 
- [Assignment day 3](link)
-
+   
 </details>
  
  
