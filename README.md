@@ -16,6 +16,7 @@
    
 + **[Day 2 - Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-2)**
   <details><summary> Theory </summary>
+  
    [Analog VLSI Design Flow and CMOS Fabrication Process](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---analog-vlsi-design-flow-and-cmos-fabrication-process)
      </details>
      <details><summary> Assignment </summary>
@@ -25,9 +26,11 @@
      
  + **[Day 3 - CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-3)**
     <details><summary> Theory </summary>
-   [CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology}(https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-3)
-    </details>
-    <details><summary> Lab </summary>
+    
+      [CMOS Fabrication Process in Deep-Submicron (DSM) and Ultra Deep- Submicron (UDSM) Technology}](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-3)
+      </details>
+      <details><summary> Lab </summary>
+    
      [Assignment day 3 ](link)
      </details>     
 
