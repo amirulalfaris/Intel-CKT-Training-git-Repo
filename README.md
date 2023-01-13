@@ -32,6 +32,16 @@
      [Assignment day 3 ](link)
      </details>     
 
+ + **[Day 3 - Metal Oxide Semiconductor Structure](link)**
+    <details><summary> Theory </summary>
+    
+      [Metal Oxide Semiconductor](link)
+      </details>
+      <details><summary> Assignment </summary>
+    
+     [Assignment day 4 ](link)
+     </details>     
+
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -439,5 +449,51 @@ Thick oxide and there is a poly it will become a resistor.
    
 </details>
  
+  ## Day 4
+## Theory - Metal Oxide Semiconductor (MOS) Structure . 
+
+<details><summary> MOS structure </summary>
+
+**MOS STRUCTURE**
+
++ Typically MOS structure is build base on the name itself which is Metal Oxide Semiconductor (MOS) . Which is the oxide layer will be sandwiched by metal at the top and semiconductor layer on bottom . 
++ Normally the metal itself is the high-conductivity polycrystalline silicon that has been deposited on the oxide . That's is the reason why we call metal due to its conductivity properties such as metal . 
++ Since the oxide is between two conductive layer . We can imagine the structure of a  MOS as capacitor itself . 
++ Due to this we have a C-V Characteristic of a MOS . 
++ Capacitance of metal to metal (MOM) structure is basically is constant - Co
++ For MOS , the capacitance will varied with respect to voltage change . 
++ The capacitance also is affected by the frequency . The relationship is inversely propotional to each other .
++ The flat-band voltage is defined as the applied gate voltage such that there is no band bending in the semiconductor  , as a result, zero net space charge in this region .
++ Due to fermi level of metal and semiconductor and is not balance during zero applied gate bias voltage
+
+<img width="597" alt="image" src="https://user-images.githubusercontent.com/121993910/212260386-b8c0dfd1-bf53-4384-9a9d-fd42447613c9.png">
+
+*Cmos structure , C-V Characteristic and relationship between capacitance and frequency.*
+
+<img width="604" alt="image" src="https://user-images.githubusercontent.com/121993910/212264557-0d57e105-2bdd-45ad-b2fb-426bb1bcacf6.png">
+
++ Interface between the semiconductor and oxide is happen in non ideal case . where there is a trap charge in this interfaace . 
++ This is due to the fabrication chemical reaction or imperfection . 
+
+
+</details>
  
- 
+<details><summary> Ideal MOS Junction or Capacitor </summary>
+
+<img width="601" alt="image" src="https://user-images.githubusercontent.com/121993910/212271155-0df05cd7-b8b1-4c5a-bfed-dbf5ec1650c3.png">
+
+*Parameters when ideal case of MOS is used*
+
++ In Ideal case we neglect all the parameters shown in the picture . The focus on ideal case will be on how it operate during these gate bias (**V<0** , **0<V<VT**, **V >VT**).
+
+**Case 1 (V<0)**
+
+<img width="274" alt="image" src="https://user-images.githubusercontent.com/121993910/212272619-87d4f964-d783-4c2e-b275-a5704951a462.png">
+
++In this case v < 0 means we applied a reverse gate voltage .
++ This cause the neagtively charge to exist  in the metal plate whereas the positively charge exist in the semiconductor plate .
++ Because of these charges , an Electric field is induced bwtween this two plate causing the majority carrier in the substrate which is hole ( in this case we assume that the subtrate is P-subtrate )  experience a force toward the oxide– semiconductor interface .
++ This causes the accumulation of holes at the interface . 
+
+</details>
+
