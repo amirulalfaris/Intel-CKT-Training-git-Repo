@@ -1,5 +1,3 @@
-# Test
-
 # Intel-CKT-Training-git-Repo
 
 ## Table Of Content 
