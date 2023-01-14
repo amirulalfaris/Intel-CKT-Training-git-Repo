@@ -32,7 +32,7 @@
      [Assignment day 3 ](link)
      </details>     
 
- + **[Day 3 - Metal Oxide Semiconductor Structure](link)**
+ + **[Day 4 - Metal Oxide Semiconductor Structure](link)**
     <details><summary> Theory </summary>
     
       [Metal Oxide Semiconductor](link)
@@ -527,3 +527,33 @@ Thick oxide and there is a poly it will become a resistor.
 
     </details>
  </details>   
+ 
+ <details><summary> Q-V and C-V characteristic of MOS </summary>
+ 
+ **Q-V**
+ 
+ <img width="670" alt="image" src="https://user-images.githubusercontent.com/121993910/212448092-54280ab0-b18b-4f2c-94c6-6fe0d7d0de02.png">
+ 
+ *Q-V characteristic*
+ 
+ + Qcc = positive due to the accumulation of holes during reverse bias voltage .
+ + 0V and onwards = negatively charge due to the induce space region witch consist of the negatively charge .
+ + Qi = increase linearly after the Vt due to the mobile electron .
+ + Threshold voltage is the summation of the potential acrros the oxide and voltage drop at the semiconductor circuit. 
+ 
+ ** C-V Characteristic ** 
+
+<img width="703" alt="image" src="https://user-images.githubusercontent.com/121993910/212448179-35559655-e1d7-4573-9425-27491daeeaa5.png">
+ 
+ + Mobile carrier at the interface is the minority carriers. 
+ + Minority carrier are thermally generated meanwhile the mamjority carrier is derived from the ionized impurity .
+ + Therfore it takes time to generate minority carriers .
+ + Therefore in the high frequency circuit , the minority carriers does not have suffienct times to be generated .
+
+  </details>   
+  
+   <details><summary> Non Ideal Structure </summary>
+ 
+ 
+ 
+ </details>
