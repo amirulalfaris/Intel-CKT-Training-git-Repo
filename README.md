@@ -486,14 +486,44 @@ Thick oxide and there is a poly it will become a resistor.
 
 + In Ideal case we neglect all the parameters shown in the picture . The focus on ideal case will be on how it operate during these gate bias (**V<0** , **0<V<VT**, **V >VT**).
 
-**Case 1 (V<0)**
+**1.Case 1 (V<0)**
 
-<img width="274" alt="image" src="https://user-images.githubusercontent.com/121993910/212272619-87d4f964-d783-4c2e-b275-a5704951a462.png">
+![image](https://user-images.githubusercontent.com/121993910/212444928-e826fbf9-a3d9-482b-95e7-c2d50bd785e4.png)
 
 +In this case v < 0 means we applied a reverse gate voltage .
 + This cause the neagtively charge to exist  in the metal plate whereas the positively charge exist in the semiconductor plate .
 + Because of these charges , an Electric field is induced bwtween this two plate causing the majority carrier in the substrate which is hole ( in this case we assume that the subtrate is P-subtrate )  experience a force toward the oxide– semiconductor interface .
 + This causes the accumulation of holes at the interface . 
+ 
+**2.Case 2 (0<V<Vt)**
 
-</details>
+<img width="460" alt="image" src="https://user-images.githubusercontent.com/121993910/212447302-25d27d92-dda2-4f3a-a468-1bcbdea9cb68.png">
 
++ As we applied a positive bias ,  The metal plate will become positively charge where as the semiconductor plate will be more likely to be negatively chrage . 
++ The induced electric field will push or force away the majority caarrier which is hole from the interface .
++ This will induced the space charge region which mainly consist of negatively charge ion due to fact that p substrate is a acceptor atoms .
++ At a certain voltage point where the surface carrier concentration is the same as the bulk carrier concentration is called the weak inversion voltage or threshold voltage . This is the point where the inversion point started . Where p-type becoming more like a n type semiconductor . 
++ Inversion here means that since the substrate is a p type subtrate . The majority carrier is hold . But applying the positive bias gate voltage cause the holes at the subtrate is being filled with electrons and becomes negatively charge . This cause the carrier concentration of the bulk which is hole at the p-substrate is becoming less compared to the induced space charge region as it being filled with electrons . therefoe only near the interface of the oxide-semiconductor , the p-type inverted to the n-type . 
++ Energy band diagram with respect to positive gate voltage is shown below.
+ 
+ 
+ <img width="243" alt="image" src="https://user-images.githubusercontent.com/121993910/212445628-10d5fb83-86d6-471e-b3db-75a497603db3.png">
+ 
+ * The conduction band bend towards the fermi level due to the negatively charge ion is near the interface **
+ 
+ **3.Case 3 (0 = and > Vt)**
+ 
+ <img width="517" alt="image" src="https://user-images.githubusercontent.com/121993910/212445732-d839e2c3-169b-4209-967a-c3c390e91a39.png">
+ 
+ + A channel is form at the threshold voltage . 
+ + If we apply a large positive gate voltage , basically what will happen that the induced space charge region will become much larger/bigger in magnitude means more negatively charge .
+ + The surface in the semiconductor adjacent to the oxide–semiconductor interface is becoming more n type . Inversion occurs .
+ + This leads to more band bending . 
+
+ <img width="282" alt="image" src="https://user-images.githubusercontent.com/121993910/212446546-a6b847ea-944a-44c5-937a-3a7cb8d65d54.png">
+ 
++ The conduction band close to the Fermi level, whereas the valence band is close to the Fermi level in the bulk semiconductor . 
++ Meaning at the oxide-semiconductor interface inversion happen form p type to n-type.
+
+    </details>
+ </details>   
