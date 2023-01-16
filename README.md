@@ -554,6 +554,26 @@ Thick oxide and there is a poly it will become a resistor.
   
    <details><summary> Non Ideal Structure </summary>
  
+ <img width="645" alt="image" src="https://user-images.githubusercontent.com/121993910/212459766-3cd0e7ec-73db-4a5f-90fd-dc2ec664c0b1.png">
+
+ + In non ideal MOS structure some of the parameters/concept will take into account such as the Effect of fixed Charge (Qf) 
+ + Fixed charge is basically charge that is being traped on the oxide layer . This will attract the negative charge to the oxide-semiconducter interface . Creating a negarive potential eventhough it is zero applied gate voltage.  
+ + This is due to the imperfection of the fabrication process during the silicon dioxide deposition . At the interface might have some Silicon hydroxide and other chemical .  
+ + To balance this voltage a negative voltage is required so that the surface charge at the silicon will be zero . 
  
+ + Another effect that can be take into account when deal with non ideal MOS is the effect of the work metal-semiconductor work function difference .
+ + In ideal case the work function difference is assume to be 0 but in real case or non ideal case it is difference .
+ + Because the fermi energy level are difference between metal and semiconductor and the fermi level also is depends on doping . 
+ + Since typically the evergy of the metal is higher than the semiconductor ( Means the fermi level is higher ) the electrons will be transfer to the semiconductor side .
+ + This cause the semiconductor to be more like a n-type since it receive electron from the metal .
+ + Also the conduction band near the interface also will bend due to this electron recieved .
+ + Due to this effect . There is some voltage or potential eventhough when zero gate voltage is applied .
  
+ <img width="740" alt="image" src="https://user-images.githubusercontent.com/121993910/212461281-c9640e0e-fa86-4002-82db-9c3d435772b0.png">
+
+ **Summary**
+ 
+ <img width="430" alt="image" src="https://user-images.githubusercontent.com/121993910/212461258-8325431b-b95a-4376-8675-716f6c132c5c.png">
+
+ + In non ideal case the flat-band voltage is needed to balance the voltage across the surface of the oxide-semiconductor .
  </details>
