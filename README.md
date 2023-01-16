@@ -29,13 +29,13 @@
       </details>
       <details><summary> Lab </summary>
     
-     [Assignment day 3 ](link)
+     [Assignment day 3 ](https://docs.google.com/document/d/1KS7-OqJR2pCQjEW9CEIrYuPPZZmWkFAo/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>     
 
  + **[Day 4 - Metal Oxide Semiconductor Structure](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-4)**
     <details><summary> Theory </summary>
     
-      [Metal Oxide Semiconductor](link)
+      [Metal Oxide Semiconductor](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---metal-oxide-semiconductor-mos-structure-)
       </details>
       <details><summary> Assignment </summary>
     
