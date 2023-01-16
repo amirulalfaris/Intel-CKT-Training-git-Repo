@@ -39,7 +39,7 @@
       </details>
       <details><summary> Assignment </summary>
     
-     [Assignment day 4 ](link)
+     [Assignment day 4 ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---metal-oxide-semiconductor-mos-structure-)
      </details>     
 
 ## Day 1
