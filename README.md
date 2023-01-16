@@ -32,7 +32,7 @@
      [Assignment day 3 ](link)
      </details>     
 
- + **[Day 4 - Metal Oxide Semiconductor Structure](link)**
+ + **[Day 4 - Metal Oxide Semiconductor Structure](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-4)**
     <details><summary> Theory </summary>
     
       [Metal Oxide Semiconductor](link)
