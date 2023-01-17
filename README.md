@@ -687,9 +687,18 @@ Thick oxide and there is a poly it will become a resistor.
  + The depletion region at the drain terminal extends laterally into the channel, reducing the effective channel length .
  +  some typical ID versus VDS curves with positive slopes in the saturation region due to channel length modulation . 
  
+
+ **Fabrication**
+ 
+   <img width="530" alt="image" src="https://user-images.githubusercontent.com/121993910/212855972-3be7b525-3328-465b-be7d-f5ac3164c997.png">
 + Across PVT the threshold voltage as will get affected .
 + For imperfection farbication process of oxide , the thickness of the oxide itself may be varied.
 + The greather the thickness of the oxide the higher will be the threshold Voltage .
  
+**Temperature**
+ 
+ + As temperature increase the thershold voltage also increase .
+ + Current decreases as temperature increases. 
+
  </details>
  
