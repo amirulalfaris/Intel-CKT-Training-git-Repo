@@ -587,7 +587,7 @@ Thick oxide and there is a poly it will become a resistor.
  + In non ideal case the flat-band voltage is needed to balance the voltage across the surface of the oxide-semiconductor .
  </details>
  
-  ## Day 4
+  ## Day 5
 ## Theory - Metal Oxide Semiconductor Field Effect Transistor(MOSFET) . 
 
 <details><summary> MOSFET </summary>
@@ -599,11 +599,97 @@ Thick oxide and there is a poly it will become a resistor.
 + N-MOSFET = N-channel MOSFET
 + P-MOSFET = P-channel MOSFET 
 
-Enhancement Mode - Need a bias to form a channel - Can be N and P type channel 
-Depletion Mode - Channel already form even without bias - Can be N and P type channel
++ Enhancement Mode - Need a bias to form a channel - Can be N and P type channel .
++ Depletion Mode - Channel already form even without bias - Can be N and P type channel
 
 <img width="605" alt="image" src="https://user-images.githubusercontent.com/121993910/212819642-01cc6858-d2b4-4e3d-acb7-04fef3aec815.png">
 
-* Cross section and symbol for all the type of MOSFET P/N channel enhancement mode (LHS) and P/N channel depletion mode (RHS)  . 
+*Cross section and symbol for all the type of MOSFET P/N channel enhancement mode (LHS) and P/N channel depletion mode (RHS).*  
 
 </details>
+
+<details><summary> MOSFET OPERATION </summary>
+ 
+ **N Channel Enchancement**
+ 
+ + As the name goes enchancement , the channel is enchance or form through a positive gate voltage as we discuss in the MOS structure chapter(Day4). The induced space charge region is form. 
+ + A positive gate voltage induces the electron inversion layer, which then “connects” the n-type source and the n-type drain regions. 
+ + The source terminal is the source of carriers that flow through the channel to the drain terminal
+ + Meaning that the electron will flow from source to drain and current will be flow vice versa .
+
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/121993910/212854257-1524ae97-0adc-491b-846c-f8ee324267f7.png">
+
+ *N channel enchancement mode MOSFET operation*
+
+ + When Vgs is less than the threshold voltage . No channel will be form and no drain current will be flow . We call this as cut off operation . (Ideally)
+ + When Vgs is greather than the threshold voltage .  An electron inversion layer has been created so that when a small drain voltage is applied, the electrons in the inversion layer will flow from the source to the positive drain terminal. ( Linear region ) 
+ + The conventional current enters the drain terminal and leaves the source  terminal.
+ 
+ <img width="207" alt="image" src="https://user-images.githubusercontent.com/121993910/212834841-edc9d445-9c56-4976-afaa-39608eb3a6b2.png">
+
+ *Id-VGS characteristic graph (Ideally)* No including the weak inversion part or subtreshold current .
+ 
+ <img width="507" alt="image" src="https://user-images.githubusercontent.com/121993910/212828917-7c2c039a-be1a-4992-aaa0-4222f213f114.png">
+
+ *The n-channel enhancement mode MOSFET with an applied gate voltage VGS<VT and with VGS>VT.*
+ 
++ When the VDS value increases. The voltage drop across the oxide near the drain terminal decreases, which means that the induced inversion charge density near the drain also decreases . ( Still linear region ) 
++ When VDS increases to the point where the potential drop across the oxide at the drain terminal is equal to VT, the induced inversion charge density is zero at the drain terminal . The VDS at this point is called VDS(sat) 
++ When VDS becomes larger than the VDS (sat) value, the point in the channel at which the inversion charge is just zero moves toward the source terminal. 
++ In this case, electrons enter the channel at the source, travel through the channel toward the drain, and then, at the point where the charge goes to zero, the electrons are injected into the space charge region where they are swept by the E-field to the drain contact .
++ At this point then the drain current will be a constant . We call it as saturation region .
+ 
+ <img width="655" alt="image" src="https://user-images.githubusercontent.com/121993910/212832840-12b87993-14d3-493a-aded-f72fe2fdaf56.png">
+
+ + MOSFET Operation and its application . 
+ 
+ <img width="219" alt="image" src="https://user-images.githubusercontent.com/121993910/212831587-c63286d0-80e0-4717-82b7-3799e316c9c7.png">
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/121993910/212854707-0a7a6a63-4a23-4ba8-90fa-a7cccf353d83.png">
+
+ *Id-VDS  and Id-Vgs characteristic* 
+ 
+ **P-Channel Enhancement**
+ 
+ <img width="411" alt="image" src="https://user-images.githubusercontent.com/121993910/212854858-79e81c39-d38f-4c6b-aa76-29297848eadc.png">
+
+ + For P channel reverse of n-enhancement  concept is applied where we applied a negative gate voltage(VSG)  to attract the holes and induced the space region .
+ + Holes flow from the source to drain and same goes to the current.
+ 
+ 
+</details>
+ 
+<details><summary> Body Bias and channel Length modulation effect </summary>
+ 
+ **Body Bias Effect**
+ 
+<img width="722" alt="image" src="https://user-images.githubusercontent.com/121993910/212838536-6af25c40-4674-41a3-a945-7e09703398c4.png">
+
+  + In Ideal case the subtrate and source terminal is connected to ground .
+  + In real case the substrate and source may not have the some potential .
+  + Therefore to achieve the same potential or rhe source-to-substrate pn junction must always be zero or reverse biased, 
+  + So VSB must always be greater than or equal to zero.
+  + Same concept as the flat band voltage to achieve balance voltage due to the non ideal effect. 
+ 
+ + The space charge region width under the oxide increases from the original value when Vsb is applied. 
+ + With an applied VSB>0, there is more charge associated with this region. 
+ + The positive charge on the top metal gate must increase to compensate for the increased negative space charge in order to reach the threshold inversion point. So when VSB>0, the threshold voltage of the n-channel MOSFET increases .
+ 
+ <img width="238" alt="image" src="https://user-images.githubusercontent.com/121993910/212842753-decdf21a-b461-4e28-8e1d-3b89daf0a0e8.png">
+
+ *Effect of Body Bias to the drain current* 
+ 
+ ** Channel Length Modulation**
+ 
+<img width="421" alt="image" src="https://user-images.githubusercontent.com/121993910/212855483-96dd272d-d8ac-4019-82bb-f100c34ea9c5.png">
+ 
+ + In Ideal case we assume that the channel Length is constant . But in real case it is change due to channel length modulation effect. 
+ + When the applying the VDS voltage until the VDS > VDS(sat) the transistor operate in saturation region . 
+ + The depletion region at the drain terminal extends laterally into the channel, reducing the effective channel length .
+ +  some typical ID versus VDS curves with positive slopes in the saturation region due to channel length modulation . 
+ 
++ Across PVT the threshold voltage as will get affected .
++ For imperfection farbication process of oxide , the thickness of the oxide itself may be varied.
++ The greather the thickness of the oxide the higher will be the threshold Voltage .
+ 
+ </details>
+ 
