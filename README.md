@@ -42,6 +42,15 @@
      [Assignment day 4 ](https://docs.google.com/document/d/1jf-B_N2NGeg1E98xbfFroVlpucC3Mob8/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>     
 
++ **[Day 5 - Metal Oxide Semiconductor Field Effect Transistor ](link)**
+    <details><summary> Theory </summary>
+          [Metal Oxide Semiconductor Field Effect Transistor]()
+      </details>
+      <details><summary> Assignment </summary>
+    
+     [Assignment day 5 ]()
+     </details>  
+
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -577,3 +586,24 @@ Thick oxide and there is a poly it will become a resistor.
 
  + In non ideal case the flat-band voltage is needed to balance the voltage across the surface of the oxide-semiconductor .
  </details>
+ 
+  ## Day 4
+## Theory - Metal Oxide Semiconductor Field Effect Transistor(MOSFET) . 
+
+<details><summary> MOSFET </summary>
+
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/121993910/212818122-12db1e62-0c9c-4461-ad24-66ebf6477abd.png">
+
+*Top, front view and symbol of N and P MOSFET*
+
++ N-MOSFET = N-channel MOSFET
++ P-MOSFET = P-channel MOSFET 
+
+Enhancement Mode - Need a bias to form a channel - Can be N and P type channel 
+Depletion Mode - Channel already form even without bias - Can be N and P type channel
+
+<img width="605" alt="image" src="https://user-images.githubusercontent.com/121993910/212819642-01cc6858-d2b4-4e3d-acb7-04fef3aec815.png">
+
+* Cross section and symbol for all the type of MOSFET P/N channel enhancement mode (LHS) and P/N channel depletion mode (RHS)  . 
+
+</details>
