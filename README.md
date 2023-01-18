@@ -605,6 +605,9 @@ Thick oxide and there is a poly it will become a resistor.
 <img width="605" alt="image" src="https://user-images.githubusercontent.com/121993910/212819642-01cc6858-d2b4-4e3d-acb7-04fef3aec815.png">
 
 *Cross section and symbol for all the type of MOSFET P/N channel enhancement mode (LHS) and P/N channel depletion mode (RHS).*  
+ 
+ Layout view - There is a rule of spacing and minimum voltage need to be followed when doing layout . 
+ Extension of poly - Across PVT the poly will decrease as this will caus e short circuit between drain and source .
 
 </details>
 
@@ -633,11 +636,12 @@ Thick oxide and there is a poly it will become a resistor.
 
  *The n-channel enhancement mode MOSFET with an applied gate voltage VGS<VT and with VGS>VT.*
  
-+ When the VDS value increases. The voltage drop across the oxide near the drain terminal decreases, which means that the induced inversion charge density near the drain also decreases . ( Still linear region ) 
-+ When VDS increases to the point where the potential drop across the oxide at the drain terminal is equal to VT, the induced inversion charge density is zero at the drain terminal . The VDS at this point is called VDS(sat) 
++ When the VDS value increases. The voltage drop across the oxide near the drain terminal decreases, which means that the induced inversion charge density near the drain also decreases . ( Still linear region ) (Vgs-vt < Vds) 
++ When VDS increases to the point where the potential drop across the oxide at the drain terminal is equal to VT, the induced inversion charge density is zero at the drain terminal . The VDS at this point is called VDS(sat) ( Vgs-Vt = Vds ) (Vds = Vdsat)
 + When VDS becomes larger than the VDS (sat) value, the point in the channel at which the inversion charge is just zero moves toward the source terminal. 
 + In this case, electrons enter the channel at the source, travel through the channel toward the drain, and then, at the point where the charge goes to zero, the electrons are injected into the space charge region where they are swept by the E-field to the drain contact .
-+ At this point then the drain current will be a constant . We call it as saturation region .
++ At this point then the drain current will be a constant ( Act as constant current source). We call it as saturation region .
++ Id is not depend on VDS anymore . 
  
  <img width="655" alt="image" src="https://user-images.githubusercontent.com/121993910/212832840-12b87993-14d3-493a-aded-f72fe2fdaf56.png">
 
@@ -666,12 +670,13 @@ Thick oxide and there is a poly it will become a resistor.
 
   + In Ideal case the subtrate and source terminal is connected to ground .
   + In real case the substrate and source may not have the some potential .
-  + Therefore to achieve the same potential or rhe source-to-substrate pn junction must always be zero or reverse biased, 
+  + Therefore to achieve the same potential , source-to-substrate pn junction must always be zero or reverse biased, 
   + So VSB must always be greater than or equal to zero.
   + Same concept as the flat band voltage to achieve balance voltage due to the non ideal effect. 
+  + Why VSB ? Why not VBS ? - Since the substrate is p type and the source is n type , if we applied a VBS , it will be a diode since it is foward bias . Meaning that there is a current flow from the subtrate to source . 
  
  + The space charge region width under the oxide increases from the original value when Vsb is applied. 
- + With an applied VSB>0, there is more charge associated with this region. 
+ + With an applied VSB>0, there is more charge associated with this region. Qd is increasing . Surface potential Fi(s) also will increases .
  + The positive charge on the top metal gate must increase to compensate for the increased negative space charge in order to reach the threshold inversion point. So when VSB>0, the threshold voltage of the n-channel MOSFET increases .
  
  <img width="238" alt="image" src="https://user-images.githubusercontent.com/121993910/212842753-decdf21a-b461-4e28-8e1d-3b89daf0a0e8.png">
@@ -682,21 +687,33 @@ Thick oxide and there is a poly it will become a resistor.
  
 <img width="421" alt="image" src="https://user-images.githubusercontent.com/121993910/212855483-96dd272d-d8ac-4019-82bb-f100c34ea9c5.png">
  
- + In Ideal case we assume that the channel Length is constant . But in real case it is change due to channel length modulation effect. 
+ + In Ideal case we assume that the current and channel Length is constant . But in real case it is change due to channel length modulation effect. 
  + When the applying the VDS voltage until the VDS > VDS(sat) the transistor operate in saturation region . 
  + The depletion region at the drain terminal extends laterally into the channel, reducing the effective channel length .
  +  some typical ID versus VDS curves with positive slopes in the saturation region due to channel length modulation . 
+ + Vds increase L will be decrease and current will be increase . 
  
 
  **Fabrication**
  
    <img width="530" alt="image" src="https://user-images.githubusercontent.com/121993910/212855972-3be7b525-3328-465b-be7d-f5ac3164c997.png">
+ 
+ **Voltage**
 + Across PVT the threshold voltage as will get affected .
++ Threshold voltage depends on voltage across oxide + voltage accross depletion region 
++ voltage across oxide depends on thickness on the oxide . 
++ Voltage across depletion region depedns on the doping concentration p-substrate  and depletion volt .
+ 
+ **Fabrication**
+ 
 + For imperfection farbication process of oxide , the thickness of the oxide itself may be varied.
 + The greather the thickness of the oxide the higher will be the threshold Voltage .
++ As substrate doping increases , threshold voltage increases as well .
++ q=CV q = 2qEsiNaFi(t)
  
 **Temperature**
  
+ + Mobility decrease as temperature increase . the carrier does not move smoothly.
  + As temperature increase the thershold voltage also increase .
  + Current decreases as temperature increases. 
 
