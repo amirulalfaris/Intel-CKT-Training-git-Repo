@@ -757,7 +757,7 @@ Thick oxide and there is a poly it will become a resistor.
   +  cgsdch exists due to the channel form . Between the poly and the channel a capacitance will be form. 
   + cch-b is the capacitance from the channel to bulk. 
   
- ![Uploading image.png…]()
+ <img width="569" alt="image" src="https://user-images.githubusercontent.com/121993910/213381518-9674b015-4081-42f5-a872-1f36850f73e3.png">
 
   *Intrinsic Capacitance During Saturation region*
   
@@ -771,3 +771,33 @@ Thick oxide and there is a poly it will become a resistor.
   + 
 
  </details>
+ 
+  <details><summary> Schematic Design, Circuit Simulation , Layout Design and Post Layout Simulation  </summary>
+   
+   *Overview of the IC design Flow *
+   
+   ![image](https://user-images.githubusercontent.com/121993910/213382115-8ca89dd5-a957-4ccc-8c84-057e1dc3e4ea.png)
+   
+   *Schematic Drawing Phase*
+   
+   ![image](https://user-images.githubusercontent.com/121993910/213382133-04536082-018f-4933-92b7-b8bbcfdcad93.png)
+   
+   *Circuit Simulation Phase*
+   
+   ![image](https://user-images.githubusercontent.com/121993910/213382147-13ce3db2-042b-4722-81cb-5b2a9c4c3b68.png)
+   
+   *Circuit Simulation Phase ( AC and Transient Responce)*
+
+![image](https://user-images.githubusercontent.com/121993910/213382167-5514ae01-1a9a-4e57-9bc7-2bb98a5857e3.png)
+   
+   *Layout Phase*
+   
+   ![image](https://user-images.githubusercontent.com/121993910/213382668-1d2e9367-bba1-4bb8-b75c-c700588e7f0c.png)
+   
+
+
+
+
+
+   
+    </details>
