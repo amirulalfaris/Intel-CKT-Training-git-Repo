@@ -44,11 +44,20 @@
 
 + **[Day 5 - Metal Oxide Semiconductor Field Effect Transistor ](link)**
     <details><summary> Theory </summary>
-          [Metal Oxide Semiconductor Field Effect Transistor]()
+          [Metal Oxide Semiconductor Field Effect Transistor](link)
       </details>
       <details><summary> Assignment </summary>
     
      [Assignment day 5 ]()
+     </details>  
+     
++ **[Day 6 - MOSFET Intrinsic Capacitance ](link)**
+    <details><summary> Theory </summary>
+          [MOSFET Intrincsic Capacitance](link)
+      </details>
+      <details><summary> Assignment </summary>
+    
+     [Assignment day 6 ]()
      </details>  
 
 ## Day 1
@@ -719,3 +728,46 @@ Thick oxide and there is a poly it will become a resistor.
 
  </details>
  
+  ## Day 5
+## Theory - MOSFET Intrinsic Capacitance  . 
+ 
+ <details><summary> MOSFET Intrinsic Capacitance </summary>
+  
+  + is like a  natural capacitance existense in the MOSFET itself . 
+  + When two electrical conductors at different voltages are close together, the electric field between them causes electric charge to be stored on them; this effect is capacitance.
+  
+  ![image](https://user-images.githubusercontent.com/121993910/213375571-f0b43f34-dde3-4e20-a2b4-ea6709fb289c.png)
+  
+  *Intrinsic Capacitance During Cut Off region*
+  
+ + Depletion region  is formed due as the PN junction between the P from subtrate and N from the drain are given a bias which is Vds . This configuration act as reverse bias . 
+ + Due to this depletion region . A capacitance is formed between the drain and bulk . We called it as junction capacitance or depletion capacitance . 
+ + This junction/depletion capacitance depends on the Vds voltage and the distance between the depletion region itself . 
+ + This concepet also can be apply on the Csb but the depletion region on source is much smaller or lesser as it does not control by any voltage .
+ + The overlap/extension  of the source and drain under the gate create a capacitance as well . We called it as the overlap capacitance . 
+ +  Cgb is capacitance formed between the poly and the bulk . 
+  
+ ![image](https://user-images.githubusercontent.com/121993910/213375614-c77ea2fa-3137-4d6f-aa22-cc95f02c0626.png)
+
+  *Intrinsic Capacitance During Linear region*
+  
+  +  The vds increase to get into the linear region , means that the depletion region on the source also increase causing the cdb to decrease . 
+  +  Overlap capacitance remain constant as it is depends on the fabrication process .
+  +  Difference is the existense of the cgsdch and cch-b 
+  +  cgsdch exists due to the channel form . Between the poly and the channel a capacitance will be form. 
+  + cch-b is the capacitance from the channel to bulk. 
+  
+ ![Uploading image.png…]()
+
+  *Intrinsic Capacitance During Saturation region*
+  
+  +  As the depletion region deplete the channel in saturation region . 
+  +  The capacitance of chdch is minimize/negelected  and cgsch is still available.
+  
+   ![image](https://user-images.githubusercontent.com/121993910/213375255-f72c9cfc-c3db-4912-b080-605b8a0c681e.png)
+
+  * Capacitance summary for all capacitance formed in MOSFET*
+  
+  + 
+
+ </details>
