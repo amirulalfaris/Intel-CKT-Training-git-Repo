@@ -60,6 +60,18 @@
      [Assignment day 6 ]()
      </details>  
 
++ **[Day 7 - CMOS Inverter]()**
+     <details><summary> Theory </summary>
+    
+     [MOSFET Inverter]()
+        </details>
+       
+     <details><summary> Assignment </summary>
+    
+     [Assignment day 7 ]()
+     </details>  
+
+
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -795,9 +807,110 @@ Thick oxide and there is a poly it will become a resistor.
    ![image](https://user-images.githubusercontent.com/121993910/213382668-1d2e9367-bba1-4bb8-b75c-c700588e7f0c.png)
    
 
+  
+   </details>
+ </details>
+ 
+ ## Day 7
+## Theory - MOSFET Inverter 
+ 
+ <details><summary> Overview </summary>
+ 
+![image](https://user-images.githubusercontent.com/121993910/214774913-10402b77-5195-4afc-bb4a-23fd24a6e0bb.png)
 
+ + CMOS inverter is the most basic (nucleolus) of all digital design. ( concept can be apply to the other gate as well)
+ + Due to its popularness in the digital design understanding the characteristic(static and drynamic) of cmos inverter would be a good benefical to us . 
+ + In this case , we would analyze the cmos inveter aspect interm of **cost**, **Integrity and Robustness**, **Performance** and **Energy Efficiency** .
+ 
+ + Cost - depends on complextity and area 
+ + Integrity and Robustness - Depend on the static behaviour (leakage) . Ideally static current is 0 but in real case not 0 . 
+ + Performance -  Performance related to freqeuncy . Also related to the dynamic responce .
+ + Energy Efficiency - The higher the freqeuncy the higher will be the power consumption. swtiching/transiton , leakage related  . 
+ 
+  </details>
+  
+ <details><summary> Static Characteristic </summary>
+ 
+<img width="512" alt="image" src="https://user-images.githubusercontent.com/121993910/214774947-a2d8acba-af63-4b9a-92b6-ade94798988e.png">
 
+ 
++ Act as a switch . Practically there is an on resistance . Ideally would be 0 . 
++ Input 1 Output 0 (NMOS will turn on and the output will pull to the GND)
++ if Input 0 Output would be 1 (PMOS will turn on and the output will put to VDD)
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214775400-3f36a55b-8b55-44fd-89fd-a524a1d5fa8d.png)
 
+ + Rail to rail means always VDD or GND cannot be at the middle . Like peak to peak . 
+ + It is independent to the size or rationless. Means it always 1 or 0 . 
+ + Other technology such as NMOS technology would depend on size to get certain voltage . 
+ + This means very small size of CMOS inverter would give VDD/GND .
+ + This helps to reduce area and cost . 
+ + Finite resistance means rn or rp . causing it to be low output impedance .
+ + The output impedance refers to the impedance, or opposition to current flow, of the component that often bears an electrical source to "drive" a load component .
+ + means it is less sensitive to noise .
+ + Imput impedance almost infinity meaning that nno current flow and able to drive multiple gate .
+ + Static power almost 0 means that there is very small current flowing from VDD to the GND . 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214780593-b4749a40-8d09-4c0e-83f6-2cf6290ddd9d.png)
 
-   
-    </details>
+ *Voltage Transfer Characteristic*
+ 
+ + At the symmertical point , the resitance of rn and rp is the same . 
+ + typicall to get symmetrical , PMOS size is usually 2.5 to 3 size of NMOS . 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214780570-96fe2fa8-5756-450a-b40a-546262d84c84.png)
+
+ *MOSFET Strength Variation*
+ 
+ + Strength is related to the W of the Nmos and PMOS 
+ + Strong means the W is larger while weak means the Width is smaller
+ + Width is propotional to the current . Means more width more current and more conductive .
+ + Ex . Strong NMOS means we increase the conductivity of the NMOS , means that the Nmos resistance will be decrease so that use less voltage to conduct . So the graph will shift to left .
+ + Ex. Strong nmos will pull the graph to the right as it required more voltage to conduct . 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214780468-bface754-37f9-4ed7-9d9c-201112efd0c2.png)
+
+ *Noise Margin CMOS inverter*
+ 
+ + Noise Margin - How much noise can the inverter tolerate . 
+ + VIH - Minimum input voltage so that the VOH is low . or consider as the minimum input voltage so that the inverter recognized the input voltage as 1 
+ + VIL - Maximum input voltage so that the VIH is high . or consider as the maximum input voltage so that the inverter recognized the input voltage as 0 .
+ + VOH - The maixumum output voltage so that the inverter recognized the voltage as logic 1 .
+ + VOL - The minumum output voltage so that the inverter recognized the voltage as logic 0 . 
+ + Less noise margin means the inverter is more sensitive to noise .
+ + more noise margin means the inveter is less sensitive to noise .
+ + 
+ 
+   </details>
+ 
+ <details><summary> Dynamic Characteristic </summary>
+
+![image](https://user-images.githubusercontent.com/121993910/214783691-8e251c43-d30d-4bcc-aaf3-ef13d634090a.png)
+
+ + Dyanmic is more related to time while static means more to steady state .
+ + The CL is very crutial as it will affect the propagation delay , and rise/fall time of the inverter .
+ + The finite resistance Rn and Rp plus the CL will give the responce to the delay . 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214784466-d3ec26c1-05ce-4604-ab22-257d2f149bb7.png)
+
+ + The CL is consist of 
+
+  **Instrinsic Capacitance** - Capacitance inside the cmos which is the junction capacitance .
+  **Wiring Capacitance** - Capactiance due to the metal routing, interconnect .
+  **Fanout Capacitance** - Capactiance due to the gate capacitance of next device or gate . 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214785221-9f2ce73b-9e38-4094-a05d-ddbfa1f8bfb1.png)
+
+ *Rise Time Defination* Capactior need times to charge , not suddenly charging. 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214785400-7f656323-6908-4bb2-9ade-3ec098a88248.png)
+ 
+ *Fall time Defination* capactiro need time also to discharge . 
+
+ ![image](https://user-images.githubusercontent.com/121993910/214785593-a41fe647-662a-4028-b662-0452eaedddcf.png)
+
+ *Propatgation Delay Defination* 
+ 
+ 
+   </details>
+  </details>   
