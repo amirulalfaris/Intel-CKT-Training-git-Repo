@@ -49,7 +49,7 @@
       </details>
       
      
-+ **[Day 6 - MOSFET Intrinsic Capacitance ](link)**
++ **[Day 6 - MOSFET Intrinsic Capacitance ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-6)**
     <details><summary> Theory </summary>
        [MOSFET Intrincsic Capacitance](link)
        </details>
