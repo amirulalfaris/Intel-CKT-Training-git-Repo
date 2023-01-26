@@ -44,12 +44,9 @@
 
 + **[Day 5 - Metal Oxide Semiconductor Field Effect Transistor ](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-5)**
     <details><summary> Theory </summary>
-          [Metal Oxide Semiconductor Field Effect Transistor](link)
+          [Metal Oxide Semiconductor Field Effect Transistor](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---metal-oxide-semiconductor-field-effect-transistormosfet-)
       </details>
-      <details><summary> Assignment </summary>
-    
-     [Assignment day 5 ]()
-     </details>  
+      
      
 + **[Day 6 - MOSFET Intrinsic Capacitance ](link)**
     <details><summary> Theory </summary>
