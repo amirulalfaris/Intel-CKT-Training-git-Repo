@@ -51,7 +51,7 @@
 + **[Day 6 - MOSFET Intrinsic Capacitance ](link)**
     <details><summary> Theory </summary>
           [MOSFET Intrincsic Capacitance](link)
-      </details>
+       </details>
       <details><summary> Assignment </summary>
     
      [Assignment day 6 ]()
@@ -725,7 +725,7 @@ Thick oxide and there is a poly it will become a resistor.
 
  </details>
  
-  ## Day 5
+  ## Day 6
 ## Theory - MOSFET Intrinsic Capacitance  . 
  
  <details><summary> MOSFET Intrinsic Capacitance </summary>
