@@ -834,21 +834,22 @@ Thick oxide and there is a poly it will become a resistor.
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/121993910/214774947-a2d8acba-af63-4b9a-92b6-ade94798988e.png">
 
  
-+ Act as a switch . Practically there is an on resistance . Ideally would be 0 . 
++ Act as a switch . Practically there is an finite on resistance when the transitor is on and infinite off resistance when the transitor is off . Ideally would be 0 . 
 + Input 1 Output 0 (NMOS will turn on and the output will pull to the GND)
 + if Input 0 Output would be 1 (PMOS will turn on and the output will put to VDD)
  
  ![image](https://user-images.githubusercontent.com/121993910/214775400-3f36a55b-8b55-44fd-89fd-a524a1d5fa8d.png)
 
- + Rail to rail means always VDD or GND cannot be at the middle . Like peak to peak . 
+ + Rail to rail means always VDD or GND cannot be at the middle . Like peak to peak . Results in high noise margin .
  + It is independent to the size or rationless. Means it always 1 or 0 . 
  + Other technology such as NMOS technology would depend on size to get certain voltage . 
  + This means very small size of CMOS inverter would give VDD/GND .
  + This helps to reduce area and cost . 
- + Finite resistance means rn or rp . causing it to be low output impedance .
+ + there is always a finite resistance between the output and vdd or ground means rn or rp . causing it to be low output impedance .
  + The output impedance refers to the impedance, or opposition to current flow, of the component that often bears an electrical source to "drive" a load component .
  + means it is less sensitive to noise .
- + Imput impedance almost infinity meaning that nno current flow and able to drive multiple gate .
+ + Imput impedance almost infinity meaning that no current flow and able to drive multiple or inifinite number of gate .
+ + By driving multuple gate fanout capacitance will increase the propagation delay . 
  + Static power almost 0 means that there is very small current flowing from VDD to the GND . 
  
  ![image](https://user-images.githubusercontent.com/121993910/214780593-b4749a40-8d09-4c0e-83f6-2cf6290ddd9d.png)
@@ -856,7 +857,7 @@ Thick oxide and there is a poly it will become a resistor.
  *Voltage Transfer Characteristic*
  
  + At the symmertical point , the resitance of rn and rp is the same . 
- + typicall to get symmetrical , PMOS size is usually 2.5 to 3 size of NMOS . 
+ + typicaly to get symmetrical , PMOS size is usually 2.5 to 3 size of NMOS . 
  
  ![image](https://user-images.githubusercontent.com/121993910/214780570-96fe2fa8-5756-450a-b40a-546262d84c84.png)
 
@@ -899,18 +900,73 @@ Thick oxide and there is a poly it will become a resistor.
   **Wiring Capacitance** - Capactiance due to the metal routing, interconnect .
   **Fanout Capacitance** - Capactiance due to the gate capacitance of next device or gate . 
  
+ + The capacitance due to the wiring depends upon the length and width of the connecting wires, and is a function of the distance of the fanout from the driving gate and the number of fanout gates
+ 
  ![image](https://user-images.githubusercontent.com/121993910/214785221-9f2ce73b-9e38-4094-a05d-ddbfa1f8bfb1.png)
 
  *Rise Time Defination* Capactior need times to charge , not suddenly charging. 
  
  ![image](https://user-images.githubusercontent.com/121993910/214785400-7f656323-6908-4bb2-9ade-3ec098a88248.png)
  
- *Fall time Defination* capactiro need time also to discharge . 
+ *Fall time Defination* capacitor need time also to discharge . 
 
  ![image](https://user-images.githubusercontent.com/121993910/214785593-a41fe647-662a-4028-b662-0452eaedddcf.png)
 
  *Propatgation Delay Defination* 
  
+ + Hence, a fast gate is built either by keeping the output capacitance small or by decreasing the on-resistance of the transistor.
+ + Aware that the on-resistance of the NMOS and PMOS transistor is not constant, but is a nonlinear function of the voltage across the transistor.
+ + propagation delay of the CMOS inverter is determined by the time it takes to charge and discharge the load capacitor CL  through the PMOS and NMOS transistors
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214981725-6b34b5d6-0793-4a52-8adb-fd1590878918.png)
+ 
+ + layout helps to reduce the diffusion and interconnect capacitances .
+ + This flexibility allows the designer to trade-off energy dissipation for performance .
+ + Also, reliability concerns (oxide breakdown, hot-electron effects) enforce firm upper-bounds on the supply voltage in deep sub-micron processes.
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214983608-c2ab18e0-6bd6-4017-9b7c-6987782e9085.png)
+
+ *The effect of input transition with different output load*
+ 
  
    </details>
+   
+   <details><summary> Power Consumption </summary>
+ 
+ + Another major factor for static CMOS is the almost complete absence of power consumption in steady-state operation mode .
+ 
+ **Dynamic Power Consumption**
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214983998-4e14c49d-7fe7-4138-832f-0065a78b99b3.png)
+
+.+ switching activity will affect the power dissipation.
+ + More switching will casue more power consumption. 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214984734-3915b0cd-c2cc-4ea8-ac00-4e6632610b83.png)
+
+ + The finite slope of the input signal causes a direct current path between VDD and GND for a short period of time during switching, while the NMOS and the PMOS
+transistors are conducting simultaneously .
+ + peak current is also a strong function of the ratio between input and output slopes
+ + short-circuit dissipation is minimized by making the output rise/fall time larger than the input rise/fall time .
+ + making the output rise/fall time too large slows down the circuit and can cause short-circuit currents in the fan-out gates 
+ 
+ **Static Cpnsumption**
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214985837-1a1bc4e2-58f8-4d4f-8174-2f8c8a0b98e7.png)
+ 
+ + Due to the reverse bias diode and the subthreshold current . 
+ + Ideally would be 0 . 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/214986375-9d18548f-1666-4180-95ae-dca2a3ccee78.png)
+ 
+ *Summarry of the power consumption*
+ 
+ + The PDP stands for the average energy consumed per switching event
+
+
+  
+ 
+ </details>
+   
+   
   </details>   
