@@ -68,10 +68,18 @@
        
      <details><summary> Assignment </summary>
     
-     [Assignment day 7 ]()
-     </details>  
 
-
++ **[Day 8 - MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations]()**
+     <details><summary> Theory </summary>
+    
+     [MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations]()
+        </details>
+       
+     <details><summary> Assignment </summary>
+    
+     [Assignment day 8 ]()
+     </details>
+     
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -970,3 +978,67 @@ transistors are conducting simultaneously .
    
    
   </details>   
+  
+  
+  ## Day 8
+## Theory - MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations 
+ 
+ <details><summary> MOSFET Parameter </summary>
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/215916868-1897da2b-730d-4a9f-ba29-80ddfb62ade3.png)
+
+*How to extract this paramter from the graph*
+
+![image](https://user-images.githubusercontent.com/121993910/215922416-539e5a87-b4f4-4e42-ab2f-bb38a30bacd1.png)
+
+*vt calculation and finding kn*
+
++ Vsb = 0 
++ Vds and Vgs always the same to get saturation operation .
++ If the square root of the measured drain current values is plotted against the gate-tosource voltage, the slope and the voltage-axis intercept of the resulting curve(s) can determine the parameters kn, VT0 and y.
++ By extrapolating
++ the curves to zero-drain-current (voltage-axis intercept point), we can find the threshold voltage VT that corresponds to each VSB value.
+The slope of each
++ curve is equal to the square root of (kn/2). Thus, the transconductance parameter k, can simply be calculated from this slope
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/215923479-c830867b-04ed-4010-a4e1-64734e26840d.png)
+
+ 
++ Next, consider the extrapolated threshold voltage values, obtained from voltage axis intercepts at nonzero substrate bias voltage. Using one of the available VSB values, the substrate bias coefficient can be found from the equation as in the snapshot.
+
+ ![image](https://user-images.githubusercontent.com/121993910/215924338-0562e5f6-6243-41c5-93a1-0150ee195fb3.png)
+
++ The saturation drain current is then measured for two different drain voltage values, VDS1 and VDS2
+   </details> 
+   
+ <details><summary> MOSFET Scaling </summary>
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/215926343-f491066c-8363-4953-8b5e-9e15c995744f.png)
+
++ The reduction of the size, i.e., the dimensions of MOSFETs, is commonly referred to as scaling
++ There are two basic types of size-reduction strategies: full scaling (also called constant-field scaling) and constant voltage scaling
+
+ **Constant Field Scaling**
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/215931530-9e4b6253-b187-4884-87f6-1eefba7a1538.png)
+
++  This significant reduction of the power dissipation is one of the most attractive features of full scaling
+
+**Constant Voltage Scaling**
+
+![image](https://user-images.githubusercontent.com/121993910/215932510-9525b0e5-597c-42d8-b6ad-bb2878ad1f84.png)
+
++ Scaling down the voltage supply not practical  which in turn would necessitate multiple power supply voltages and complicated levelshifter arrangements.
++  The doping densities must be increased by a factor of s2 in order to preserve the charge-field relations.
++  the saturation-mode drain current will be increased by a factor of S after constant voltage scaling. 
++ the power density (power dissipation per unit area) is found to increase by a factor of S3 after constant-voltage scaling.
+
++ constant-voltage scaling may be preferred over full (constant-field) scaling in many practical cases because of the external voltage-level constraints. 
++ It must be recognized, however, that constant-voltage scaling increases the drain current densityand the power density by a factor of S3. 
++ This large increase in current and power densities may eventually cause serious reliability problems for the scaled transistor, such as electromigration, hot-carrier degradation, oxide breakdown, and electrical over-stress.
+
+   </details> 
+ 
+
+
+</details> 
