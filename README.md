@@ -66,9 +66,7 @@
      [MOSFET Inverter]()
         </details>
        
-     <details><summary> Assignment </summary>
-    
-
+     
 + **[Day 8 - MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations]()**
      <details><summary> Theory </summary>
     
