@@ -1039,6 +1039,81 @@ The slope of each
 
    </details> 
  
+ <details><summary> Short Channel Effect </summary>
+ 
+ <img width="575" alt="image" src="https://user-images.githubusercontent.com/121993910/216249105-f0cd8578-c9ec-4952-a415-325048f149ff.png">
 
+*Overview of the short channel effects*
 
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/121993910/216249277-fd87dc22-e186-4043-b448-2e2fd481b0fa.png">
+
+**Drain Induced Barrier Lowering(DIBL)**
+
+*<img width="573" alt="image" src="https://user-images.githubusercontent.com/121993910/216250571-d2325d7f-62de-488f-8cc8-609f3b93a052.png">
+
++ One of the reason why there is the subthreshol current means not only due to weak inversion only. 
++ Normally the Vgs is the one controlling the barrier . Means if Vgs < Vto , the carriers (electrons) in the channel face a potential barrier that blocks the flow .
++ the carriers (electrons) in the channel face a potential barrier that blocks the flow
++ But in small geometry or small size transistor this is not true . Because the the potential barrier is controlled by both the gate-to-source voltage VGS and the drainto-source voltage VDS
++ As the Vds is increasing the potential barrier near the drain is decreasing . This effect is called the DIBL .
++ The reduction of the potential barrier eventually allows electron flow between the source and the drain, even if the gate-to-source voltage is lower than the threshold voltage. (Subthreshold current)
+
+**Mobility Degradation**
+
+<img width="554" alt="image" src="https://user-images.githubusercontent.com/121993910/216251858-45272b16-8877-4c00-974b-4e82ae703ca2.png">
+
++ the carrier velocity in the channel is also a function of the normal (vertical) electric-field component Ex .
++ influences the scattering of carriers (collisions suffered by the carriers) in the surface region.
++ Causing reduction in mobility .
+
+** Velocity Saturation**
+
+<img width="571" alt="image" src="https://user-images.githubusercontent.com/121993910/216253274-a4453b1a-ccb7-4f3d-b05c-0334a53f6602.png">
+
++ At a certain Electric field the carrier will experience a velocity saturation. 
++ Carrier velocity saturation actually reduces the saturation-mode current below the current value predicted by the  conventional long-channel current equations.
+
+**Impact Ionization**
+
++ Electron hole pair generated due to high velocity electron due to stong electric field.impacting on silicon atoms and ionizing them
++ normally, most of the electrons are attracted by the drain, while the holes enter the substrate to form part of the parasitic substrate current
++ between the source and the drain can act like the base of an npn transistor . (source as emitter and drain as collecter)
+
+**Hot Carrier**
+
+<img width="573" alt="image" src="https://user-images.githubusercontent.com/121993910/216255728-8d62325d-a22c-491b-81f1-63e8898740c4.png">
+
++ Electrons and holes gaining high kinetic energies in the electric field (hot carriers) may, however, be injected into the gate oxide, and cause permanent changes in the oxideinterface charge distribution, degrading the current-voltage characteristics of the MOSFET
++ carrier trapped in the oxide causing Vt to increase as well .
+
+**Subthreshold Conduction**
+
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/121993910/216256934-3d87950e-81b3-46f9-8e44-37112eccd099.png"
+
++ Current due to weak inversion so called the subthreshold current
+
+  </details> 
+  
+   <details><summary> Process,Voltage and Temperature(PVT) Variations </summary>
+   
+   **Process**
+   
+   <img width="562" alt="image" src="https://user-images.githubusercontent.com/121993910/216260357-dff43061-f0c2-4fa6-81e9-ef12990fbaf9.png">
+
+    + During Fabrication process. Some of the process are not out of control . Means will cause imperfection.
+  + Ex . Uneven oxide thickness will effect the oxide capacitance , threshold voltage also will effect --> current also effect -->power --> performance effect  .
+  + This may varied across different devices.
+  
+  <img width="570" alt="image" src="https://user-images.githubusercontent.com/121993910/216260700-c973d0c9-5e7b-4e30-9692-b48841c22f24.png">
+
++ Slow means threshold voltge more . more time to conduct .
++ Fast means threshold voltage less . Less time to conduct .
++ SS means . slow nmos slow p mos . (Same concept across other SF,FS)
+
+**Temperature**
+
+<img width="404" alt="image" src="https://user-images.githubusercontent.com/121993910/216261346-d5ab1f7d-d425-4799-85f2-03948739c98e.png">
+
+   
+     </details> 
 </details> 
