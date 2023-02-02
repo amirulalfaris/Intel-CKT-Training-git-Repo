@@ -67,10 +67,10 @@
         </details>
        
      
-+ **[Day 8 - MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations]()**
++ **[Day 8 - MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-8)**
      <details><summary> Theory </summary>
     
-     [MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations]()
+     [MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-8)
         </details>
        
      <details><summary> Assignment </summary>
