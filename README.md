@@ -60,10 +60,10 @@
      [Assignment day 6 ]()
      </details>  
 
-+ **[Day 7 - CMOS Inverter]()**
++ **[Day 7 - CMOS Inverter](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-7)**
      <details><summary> Theory </summary>
     
-     [MOSFET Inverter]()
+     [MOSFET Inverter](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-7)
         </details>
        
      
