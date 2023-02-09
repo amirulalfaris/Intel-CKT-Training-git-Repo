@@ -1193,7 +1193,7 @@ VDD-VTn.
 + To a first order, M2  may be considered as a resistor in series with M1.
 + Since the drive on M2  is large, this resistance is small and has only a small effect on the voltage transfer characteristics
 + In case (c), transistor M1 acts as a resistor, causing body effect in M2. The overall impact is quite small as seen from the plot.
-
++ In here basically means the vih vil vol voh is very important as the input and output will change base on different snenario. 
 
 
 
