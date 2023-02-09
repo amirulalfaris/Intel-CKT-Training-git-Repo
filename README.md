@@ -1178,6 +1178,8 @@ VDD-VTn.
 </details> 
 
 <details><summary> Static Properties and Propagation Delay </summary>
+ 
+ **Static Properties*8
 
 <img width="511" alt="image" src="https://user-images.githubusercontent.com/121993910/217749900-f494f8b5-8695-4520-ad33-2b0f875abdf5.png">
 
@@ -1195,9 +1197,100 @@ VDD-VTn.
 + In case (c), transistor M1 acts as a resistor, causing body effect in M2. The overall impact is quite small as seen from the plot.
 + In here basically means the vih vil vol voh is very important as the input and output will change base on different snenario. 
 
+**Propagation Delay**
+ 
+<img width="572" alt="image" src="https://user-images.githubusercontent.com/121993910/217828273-95fa1e65-2fd1-472b-891f-660ffe24e43a.png">
 
+ + As expected, the case where both inputs transition go low (A = B = 1-->0) results in a smaller delay, compared to the case where only one input is driven low. 
++ Notice that the worst-case low-to-high delay depends upon which input (A or B) goes low. 
++ The reason for this involves the internal node capacitance of the pull-down stack (i.e., the source of M2
+). 
++ For the case that B = 1 and A transitions from 1->0, the pull-up PMOS device only has to charge up the output node capacitance since M2 is turned off. 
++ On the other hand, for the case where A=1 and B transitions from 1->0, the pull-up PMOS device has to charge up the sum of the output and the internal node capacitances, which slows down the transition.
 
+<img width="560" alt="image" src="https://user-images.githubusercontent.com/121993910/217829385-be2cd240-76c8-42de-943e-8f5a0d55aa0d.png">
+
+ *Propagation delay of NAND gates*
+ 
+ <img width="570" alt="image" src="https://user-images.githubusercontent.com/121993910/217829486-a0ac6d28-bbd8-4b28-b0e8-fe57f31ca6be.png">
+
+ *Propagation delay of NOR gates*
+ 
+ <img width="575" alt="image" src="https://user-images.githubusercontent.com/121993910/217829561-681fc4c2-c34f-49fb-ae6a-0d3a2ce99155.png">
+
+ *NAND VS NOR Comparison*
+ 
+ + From the above discussion we found that to get the same delay as the inverter NOR implementation required more area compared to NAND implementation. 
+ + So we conclude NAND implementation is preferred over NOR implementation.
+ + In other words, adding devices in series slows down the circuit, and devices must be made wider to avoid a performance penalty.
+ +  Since PMOS devices have a lower mobility relative to NMOS devices, stacking devices in series must be avoided as much as possible
 
 </details> 
 
- </details>
+<details><summary> Complex Logic Circuits </summary>
+ 
+ <img width="572" alt="image" src="https://user-images.githubusercontent.com/121993910/217830712-7304e707-fbaa-4b31-97bf-d8a1b8babb76.png">
+
+ <img width="563" alt="image" src="https://user-images.githubusercontent.com/121993910/217831134-9a693d74-9372-4ef2-8587-8c419077f37f.png">
+
+ *Example using AOI and OAI logic* 
+ 
+  </details> 
+ 
+ <details><summary> Transmission Gate(TG) </summary>
+ 
+ <img width="571" alt="image" src="https://user-images.githubusercontent.com/121993910/217831391-816c0820-fd8b-40ac-afe1-e71b19763213.png">
+
+ + Most widely-used solution to deal with the voltage-drop problem is the use of transmission gates. 
+ + NMOS devices pass a strong 0 but a weak 1, while PMOS transistors pass a strong 1 but a weak 0. 
+ + The ideal approach is to use an NMOS to pull-down and a PMOS to pull-up. 
+ + The control signals to the transmission gate (C and C) are complementary. 
+ + The transmission gate acts as a bidirectional switch controlled by the gate signal C. 
+ + When C = 1, both MOSFETs are on, allowing the signal to pass through the gate.
+ +  C = 0 places both transistors in cutoff, creating an open circuit between nodes A and B.
+ 
+ <img width="569" alt="image" src="https://user-images.githubusercontent.com/121993910/217832440-3854767d-9a61-46bb-8655-1391e9fd5713.png">
+ 
+ + Consider the case of charging node Vout to VDD for the transmission gate . 
+ + Vin is driven to VDD and transmission gate is enabled (C = 1 and C= 0).
+ + If only the NMOS pass-device were present, Vout charges up to VDD-VTn at which point the NMOS device turns off. 
+ + Because the source of the nmos is increasing as vout charing up to vdd , causing the Vgs will become lesses and lesser and eventually less than vt causing it to be off .
+ + However, since the PMOS device is present and turned on (VGSp = -VDD), charging continues all the way up to VDD. 
+ + On other hand, discharging Vout to 0. Vout is initially at VDD when Vin is driven low.
+ + The PMOS transistor by itself can only pull down vout to VTp at which point it turns off. 
+ + The parallel NMOS device however stays turned on (since its VGS = VDD) and pulls vout all the way to GND. 
+ +Though the transmission gate requires two transistors and more control signals, it enables rail-to-rail swing.
+ 
+ <img width="571" alt="image" src="https://user-images.githubusercontent.com/121993910/217833455-a7897292-0940-4a38-bd5a-9fb1220f3674.png">
+
+ *Body Bias Effect on threshold voltage*
+ 
+ <img width="575" alt="image" src="https://user-images.githubusercontent.com/121993910/217833526-3b19e257-b084-4ecd-860b-fab606a7b010.png">
+
+ *Single NMOS switch,passes strong 0*
+ 
+ <img width="578" alt="image" src="https://user-images.githubusercontent.com/121993910/217833623-d2d3c298-8442-4653-b6e0-ef46d4690a31.png">
+
+ *Single PMOS switch, Passes strong 1*
+ 
+ <img width="573" alt="image" src="https://user-images.githubusercontent.com/121993910/217833700-1ea9eb2f-89a2-4f31-948d-6a6ae2cf7dbe.png">
+
+ + To cover up the disadvatages of the nmos and pmos single switch, TG is introduced.
+ 
+<img width="569" alt="image" src="https://user-images.githubusercontent.com/121993910/217834151-3dab7ca6-871d-45f6-b248-98b627cff25d.png">
+
+ + The pass-transistor and the transmission gate are, unfortunately, not ideal switches, and have a series resistance associated with it
+ + When NMOS and PMOS off the resistance is high 
+ + When NMOS and PMOS on the resistance is low
+ + Parrallel both of this NMOS and PMOS resistance will eventually causing the resistance to be low .
+ + Advantages of the TG compared to the single switch .
+ 
+ <img width="564" alt="image" src="https://user-images.githubusercontent.com/121993910/217834600-ac7f9923-0b00-46c7-ae6a-8e587ad6baf2.png">
+
+ *Another advantages of using TG to form the combinational circuits(Only certain circuit)*
+ 
+ 
+ 
+ </details> 
+
+  </details>
