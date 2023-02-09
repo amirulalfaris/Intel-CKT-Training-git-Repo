@@ -78,6 +78,17 @@
      [Assignment day 8 ]()
      </details>
      
++ **[Day 9 - Combinational Digital Logic Circuits]()**
+     <details><summary> Theory </summary>
+    
+     [Combinational Digital Logic Circuits]()
+        </details>
+       
+     <details><summary> Assignment </summary>
+    
+     [Assignment day 9 ]()
+     </details>     
+     
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -1103,15 +1114,90 @@ The slope of each
   + This may varied across different devices.
   
   <img width="570" alt="image" src="https://user-images.githubusercontent.com/121993910/216260700-c973d0c9-5e7b-4e30-9692-b48841c22f24.png">
-
-+ Slow means threshold voltge more . more time to conduct .
-+ Fast means threshold voltage less . Less time to conduct .
-+ SS means . slow nmos slow p mos . (Same concept across other SF,FS)
+  
+   + Slow means threshold voltge more . more time to conduct.
+   + Fast means threshold voltage less . Less time to conduct.
+   + SS means . slow nmos slow p mos.(Same concept across other SF,FS)
 
 **Temperature**
 
 <img width="404" alt="image" src="https://user-images.githubusercontent.com/121993910/216261346-d5ab1f7d-d425-4799-85f2-03948739c98e.png">
 
-   
+   </details> 
      </details> 
+ 
+## Day 9
+## Theory - Combinational Digital Logic Circuits
+
+ <details><summary> Introduction </summary>
+
+**Introduction**
+
+<img width="409" alt="image" src="https://user-images.githubusercontent.com/121993910/217744982-e8b179e9-7d5a-4265-b484-f5a3fdd1094f.png">
+
++ Combinational logic circuits, or gates, which the outputs is determine from the  Boolean functions of the inputs.
++ Different from sequential , Output is depends on the current input data abut also previous state or values of the inputs signal. 
++ This is done by providing a feedback of the output to the input signal . 
++ Consequently, the circuit “remembers” past events and has a sense of history.
++ A sequential circuit includes a combinational logic portion and a module that holds the state. 
++ Example circuits are registers, counters, oscillators, and memory.
++ Static CMOS is used due to its advantages ,(i.e, low sensitivity to noise), good performance, and low power consumption with no static power dissipation
++ Combinational logic gates is the combinatation of transitor/gate to perform some boolean expression to get the desired output .
+
+
 </details> 
+
+<details><summary> Complementary MOS logic </summary>
+
+<img width="411" alt="image" src="https://user-images.githubusercontent.com/121993910/217745114-bb17f9c6-3218-41a5-9934-da83ecd5a273.png">
+
+*Function of PUP and PDN network*
+
+<img width="409" alt="image" src="https://user-images.githubusercontent.com/121993910/217745393-53a9be92-81bc-4991-b5a1-407b6e089cd3.png">
+
+*Five basic characteristic when using CMOS technology*
+
++ An NMOS device pulls the output all the way down to GND, while a PMOS lowers the output no further than |VTp| — the PMOS turns off at that point, and stops contributing discharge current . 
++ For pmos Vsg need to be greather than vt . So as the output discharge to the ground . Vsg will drop and evetually be less than Vt . causing it to be off .
++ A PMOS switch succeeds in charging the output all the way to VDD, while the NMOS device fails to raise the output above
+VDD-VTn.
++ This is because when the nmos become pup . the output will be charging towards vdd . So at one point , Vgs will becomes less than vt causing the nmos to off . 
+
+<img width="514" alt="image" src="https://user-images.githubusercontent.com/121993910/217747210-c0671300-c519-46f8-999a-44bf54b87a71.png">
+
+
++ This means that a parallel connection of transistors in the pull-up network corresponds to a series connection of the corresponding devices in the pull-down .
++ Naturally inverting gate such as NAND,NOR and XNOR . 
++ For basic gate AND OR and XOR need to add additional inverter at the output .
++ The number of transistors required to implement an N-input logic gate is 2N
+
+<img width="509" alt="image" src="https://user-images.githubusercontent.com/121993910/217748722-5eaaaa29-8f27-470e-8dd4-2fb2c3563c15.png">
+
+*Example of some of the combinational logic circtuis*
+
+</details> 
+
+<details><summary> Static Properties and Propagation Delay </summary>
+
+<img width="511" alt="image" src="https://user-images.githubusercontent.com/121993910/217749900-f494f8b5-8695-4520-ad33-2b0f875abdf5.png">
+
+<img width="520" alt="image" src="https://user-images.githubusercontent.com/121993910/217750986-46a7ca7a-7c9f-449e-b46e-+12cace33baf4.png">
+
+*VTC for NAND gates*
+
++ The large variation between case (a) and the others (b & c) is explained by the fact that in the former case both transistors in the pull-up network are on simultaneously for A=B=0 representing a strong pull-up . 
++  In the latter cases, only one of the pullup devices is on. The VTC is shifted to the left as a result of the weaker PUN.
++ The difference between (b) and (c) results mainly from the state of the internal node int between the two NMOS devices
++ For the NMOS devices to turn on, both gate-to source voltages must be above VTn, with VGS2 = VA - VDS1 and VGS1 = VB. 
++ The threshold For case (b), M3  is turned off, and the gate voltage of M2 is set to VDD.
++ To a first order, M2  may be considered as a resistor in series with M1.
++ Since the drive on M2  is large, this resistance is small and has only a small effect on the voltage transfer characteristics
++ In case (c), transistor M1 acts as a resistor, causing body effect in M2. The overall impact is quite small as seen from the plot.
+
+
+
+
+
+</details> 
+
+ </details>
