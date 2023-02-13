@@ -61,7 +61,7 @@
        
      <details><summary> Assignment </summary>
     
-     [Assignment day 6 ](https://docs.google.com/document/d/11heBGtUr4o9riQ99TaUUPJHKtug-Ncc_/edit?usp=share_link&ouid=110064100622421144823&rtpof=true&sd=true)
+     [Assignment day 6 ](https://docs.google.com/document/d/1BH59Tekt1jYVjS3yrg2aIWvGPHQIxKoK/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>  
 
 + **[Day 7 - CMOS Inverter](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-7)**
