@@ -47,9 +47,9 @@
  
     [Metal Oxide Semiconductor Field Effect Transistor](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---metal-oxide-semiconductor-field-effect-transistormosfet-)
       </details>
-      <details><summary> Assignment 5 - MOS Characterization </summary>
+      <details><summary> Assignment 5 </summary>
     
-     [Assignment day 5 ](https://docs.google.com/document/d/17sxTGNOsezyWPTwe275UbCvFgDeGLwED/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
+     [Assignment day 5 - - MOS Characterization](https://docs.google.com/document/d/17sxTGNOsezyWPTwe275UbCvFgDeGLwED/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>
       
      
@@ -59,9 +59,9 @@
      [MOSFET Intrincsic Capacitance](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---mosfet-intrinsic-capacitance--)
         </details>
        
-     <details><summary> Assignment </summary>
+     <details><summary> Assignment 6 </summary>
     
-     [Assignment day 6 ](https://docs.google.com/document/d/1BH59Tekt1jYVjS3yrg2aIWvGPHQIxKoK/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
+     [Assignment day 6 - MOSFET Capacitor Simulation](https://docs.google.com/document/d/1BH59Tekt1jYVjS3yrg2aIWvGPHQIxKoK/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>  
 
 + **[Day 7 - CMOS Inverter](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-7)**
