@@ -48,6 +48,11 @@
     [Metal Oxide Semiconductor Field Effect Transistor](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#theory---metal-oxide-semiconductor-field-effect-transistormosfet-)
       </details>
       
+      <details><summary> Assignment 5 - MOS Characterization </summary>
+    
+     [Assignment day 5 ](https://docs.google.com/document/d/17sxTGNOsezyWPTwe275UbCvFgDeGLwED/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
+     </details>
+      
      
 + **[Day 6 - MOSFET Intrinsic Capacitance](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-6)**
      <details><summary> Theory </summary>
