@@ -69,6 +69,9 @@
     
      [MOSFET Inverter](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-7)
         </details>
+       <details><summary> Assignment 7 </summary>
+       [Assignment day 7 - Static and Dynamic Characteristic Assignment](https://docs.google.com/document/d/1ARM66XEYoOKXza0JABzIeFg4IdwbLXLb/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
+      </details>
        
      
 + **[Day 8 - MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-8)**
@@ -76,7 +79,7 @@
     
      [MOSFET Parameter Extraction, Scaling, Short Channel Effects and PVT Variations](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-8)
         </details>
-       
+        
      <details><summary> Assignment </summary>
     
      [Assignment day 8 ]()
