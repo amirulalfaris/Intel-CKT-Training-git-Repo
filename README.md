@@ -82,7 +82,7 @@
         
      <details><summary> Assignment </summary>
     
-     [Assignment day 8 ]()
+     [Assignment day 8]()
      </details>
      
 + **[Day 9 - Combinational Digital Logic Circuits]()**
@@ -93,7 +93,18 @@
        
      <details><summary> Assignment </summary>
     
-     [Assignment day 9 ]()
+     [Assignment day 9]()
+     </details>
+     
++ **[Day 10 - Sequential Digital Logic Circuits]()**
+     <details><summary> Theory </summary>
+    
+     [Sequential Digital Logic Circuits]()
+        </details>
+       
+     <details><summary> Assignment 10 </summary>
+    
+     [Assignment day 10]()
      </details>     
      
 ## Day 1
@@ -1301,3 +1312,88 @@ VDD-VTn.
  </details> 
 
   </details>
+  
+  ## Day 10
+## Theory - Sequential Digital Logic Circuits
+
+ <details><summary> Introduction </summary>
+ 
+ <img width="575" alt="image" src="https://user-images.githubusercontent.com/121993910/218961275-b9b1ec35-e8db-46a1-a3d6-e1d756132dfb.png">
+
++ Combinational logic circuits that were described earlier have the property that the output of a logic block is only a function of the current input values
++  Systems require storage of state information, leading to another class of circuits calledsequential logic circuits
++  In these circuits, the output not only depends upon the current values of the inputs, but also upon preceding input values
++ synchronous sequential systems - in which all registers are under control of asingle global clock.
++ The Next State is determined based on the Current State and the current Inputs and is fed to the inputs of registers
++ registers can be positive edge-triggered (where the input data is updated on the positive edge) or negative edge-triggered (where the input data is updated on the negative edge of the clock, as is indicated by a small circle at the clock input). 
+
+ **Bistable Principle**
+ 
+<img width="576" alt="image" src="https://user-images.githubusercontent.com/121993910/218962696-db002725-fa4b-4846-8c69-17a59c1a9450.png">
+
++ Static memories use positive feedback to create a bistable circuit 
++ a bistable circuit — a circuit having two stable states that represent 0 and 1
++ The chance is indeed very small that the cross-coupled inverter pair is biased at C and stays there. 
++ Operation points with this property are termed metastable.
++ The circuit serves as amemory, storing either a 1 or a 0 depending on to position A and B .
++ A trigger pulse must be applied to change the state of the circuit.
+
+</details> 
+
+<details><summary> Latches </summary>
+
+**SR LATCHES**
+
+<img width="572" alt="image" src="https://user-images.githubusercontent.com/121993910/218971899-400edd72-fd22-40b3-8f6f-125e9a5c19b1.png">
+
++  SR — or set-reset.
++ This circuit is similar to the cross-coupled inverter pairwith NOR gates replacing the inverters
++ The second input of the NOR gates is connected to the trigger inputs (S and R), that make it possible to force the outputs Q and Q' to a given state .
++ 1 on S will Set means Q=1 meanwhile 1 on R will reset means Q=0
++ For NAND based it is inverted as the input is active low . means that when S=0 it is set(Q=1) and R=0 it is reset(Q=0) .
++ When S and R 1 it is invalid as it is not compliment each other .
++  asynchronous - do not require a clock signal.
+
+**Clocked SR latch**
+
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/121993910/218973330-d1886df9-7737-4586-babc-0f67ee216a74.png">
+
++ Known also as SR flip-flop— a level-sensitive positive latch.
++ It will update the output when the clk is 1 for NOR based
++ For Nand base it will update when the clk is 0. 
++ For NOR is AOI
++ OAI structure,for NAND Base
+
+**NAND Based Clocked SR Latch with Active HIGH Inputs**
+
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/121993910/218976487-030de8a4-2c51-48c9-a8d8-86c940f01ced.png">
+
++ Using NAND based but the output will get updated when the clk is 1 .
++ Output is 1 when S=1 and output is 0 when R=1 .
++ " The drawback of this implementation is that the transistor count is higher than the active low version
+
+**JK Latch**
+
+<img width="576" alt="image" src="https://user-images.githubusercontent.com/121993910/218978692-8f0652d9-f0dc-4f29-9909-5f4d40d8eaa7.png">
+
++ when both inputs S and R are activated at the same time , 
++ This problem can be overcome by adding two feedback lines from the outputs to the inputs. know as JK latch.
++ both inputs are equal to " 1 " during the active clock phase, the latch simply switches its state due to feedback.
+
+<img width="576" alt="image" src="https://user-images.githubusercontent.com/121993910/218979152-52e78ecc-1509-4036-ab0c-02424128cc4b.png">
+
+**Master Slave JK Flip Flop**
+
+<img width="576" alt="image" src="https://user-images.githubusercontent.com/121993910/218981551-3c2e47be-4a0c-499d-9c1d-13a2a879c5b8.png">
+
++  The output levels of the flip-flop circuit are determined during this second phase, based on the master-stage outputs set in the previous phase.
++ the circuit is never transparent, i.e., a change occurring in the primary inputs is never reflected directly to the outputs.
++ Due to only one circuit can be active on a time.
++ clearly advantages that separates the master-slave flip-flop from all of the latch circuits .
++ When the clock pulse is high, a narrow spike or glitch in one of the inputs, 
++ for instance a glitch in the J line (or K line), may set (or reset) the master latch and thus cause an unwanted state transition, which will then be propagated into the slave stage during the following phase.
++ Can be eliminated with the edge triggered flip flop .
+
+
+</details>
+  </details> 
