@@ -1396,4 +1396,55 @@ VDD-VTn.
 
 
 </details>
+
+<details><summary> Conventional CMOS Lacthes </summary>
+
+<img width="507" alt="image" src="https://user-images.githubusercontent.com/121993910/219255307-80cf38e0-3834-4a87-96fe-ab6b0c462dbf.png">
+
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/121993910/219255903-d7cfde56-8dfc-4a52-88d4-ab6949b1ae8d.png">
+
++ Adding the inverter at the input is to avoid unnecassarry noise . 
+
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/121993910/219256314-a75e0584-b578-4a4b-b77b-6807bd72dc7b.png">
+ 
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/121993910/219256749-8b4db467-de9e-40f1-8e59-758310061426.png">
+
++ The TG at the input is activated by the CK signal, 
++ whereas the TG in the inverter loop is activated by the inverse of the CK signal
++ input signal is accepted (latched) into the circuit when the clock is high, 
++ this information is preserved as the state of the inverter loop when the clock is low
+
+</details>
+
+<details><summary> D Flip Flop </summary>
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/121993910/219257067-b2eb54ba-a433-4eec-9907-544ce75a92c3.png">
+
++ Direct CMOS implementations of conventional circuits such as the clocked JK latch or the JK masterslave flip-flop tend to require a large number of transistors.
++ Sequential circuits built primarily with CMOS transmission gates are generally simpler and require fewer transistors 
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/121993910/219267322-b2a20de4-1a53-419c-8c84-b9521ba1aa02.png">
+
+*Operation of D-FF*
+
++ When the clock is, high, the master stage follows the D input while the slave stage holds the previous value.
++ When the clock changes from logic "1" to logic 0 "," the master latch ceases to sample the input and stores the D value at the time of the clock transition.
++ At the same time, the slave latch becomes transparent, passing the stored master value to the output of the slave stage, Q.
++ The input cannot affect the output because the master stage is disconnected from the D input
++ When the clock changes again from logic 0" to 1," the slave latch locks in the master latch output and the master stage starts sampling the input again.
++ this circuit is a negative edge-triggered D flip-flop by virtue of the fact that it samples the input at the falling edge of the clock pulse.
+
+
+</details>
+
+<details><summary> Setup/Hold time </summary>
+
+<img width="507" alt="image" src="https://user-images.githubusercontent.com/121993910/219267588-6eed262b-6dab-4a95-86ec-8599eb687c50.png">
+
++ Any violation of such specifications can cause metastability problems which lead to seemingly chaotic transient behavior, and can result in an unpredictable state after the transitional period.
++ 
+
+
+
+</details>
   </details> 
