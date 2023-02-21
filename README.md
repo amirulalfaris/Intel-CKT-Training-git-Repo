@@ -96,10 +96,10 @@
      [Assignment day 9]()
      </details>
      
-+ **[Day 10 - Sequential Digital Logic Circuits]()**
++ **[Day 10 - Sequential Digital Logic Circuits](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-10)**
      <details><summary> Theory </summary>
     
-     [Sequential Digital Logic Circuits]()
+     [Sequential Digital Logic Circuits](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-10)
         </details>
        
      <details><summary> Assignment 10 </summary>
