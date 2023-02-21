@@ -82,7 +82,7 @@
         
      <details><summary> Assignment </summary>
     
-     [Assignment day 8]()
+     [Assignment day 8](https://docs.google.com/document/d/1T82fZ4luomW3ejlTlzLEROSdr7TmIJPb/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>
      
 + **[Day 9 - Combinational Digital Logic Circuits]()**
