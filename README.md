@@ -107,6 +107,13 @@
      [Assignment day 10]()
      </details>     
      
++ **[Day 12 - General Purpose Input and Output (GPIO) Design]()**
+     <details><summary> Theory </summary>
+    
+     [General Purpose Input and Output (GPIO) Design]()
+        </details>
+       
+             
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -1448,3 +1455,148 @@ VDD-VTn.
 
 </details>
   </details> 
+  
+## Day 12
+## Theory - General Purpose Input and Output (GPIO) Design 
+
+ <details><summary> Critical Voltage </summary>  
+ 
+ <img width="555" alt="image" src="https://user-images.githubusercontent.com/121993910/222869758-4ef86711-0755-4f46-8dc6-a403df57323b.png">
+ 
+ + Interconnect basically wire ,metal=poly . 
+ + Interconnect induce some noise . Paracitic capacitance couple to other metal.
+ + Vol very low near to 0. But this internconnect noise will cause the vil next is higher or lower .
+ + If its low its okay . But high it will not produce proper output .
+ + Vil =maximum input voltage vil-vol =noise margin low .
+ + Same as Voh near to vdd somhow less due to leakage and non ideal problem .
+ + Due to noise vih its reduce minimum allow voltage . To produce proper output .
+ + Vih –voh = noise margin high .
+ + Voh always greater than vih 
+ + But vil always greater than voh .
+
+![image](https://user-images.githubusercontent.com/121993910/222870239-c375628f-8ac1-443a-9f67-c3dc90f3fc00.png)
+
+NMh = VOH - VIH 
+NMl = VIL - VOL 
+
+![image](https://user-images.githubusercontent.com/121993910/222870310-cdec96f3-896a-4861-9cfe-fd8e516d52b2.png)
+
++ For ideal case where the resistance is equal and the noise margin is vdd/2.
++ Noise margin = how much noise can tolerate . 
++ Highest ideal NM = vdd/2
+
+![image](https://user-images.githubusercontent.com/121993910/222870532-2072b90c-e934-438e-85bf-ee5219bbe6d3.png)
+
++ Non ideal case or practical case . 
++ if Vin is between the 0-Vil output will be ~ Voh-Vdd
++ if Vin is between Vih-Vdd output will be 0-Vol.
++ Why there is a range from voh-vdd and 0-vol .
++ DUe to leakage current as the transistor has finite resistance on pmos and nmos . So vdd stil flow to the ground .
+
+ ![image](https://user-images.githubusercontent.com/121993910/222871136-7e28f010-ec89-4b4d-a312-9af44694dd61.png)
+
+*Calculation*
+
+![image](https://user-images.githubusercontent.com/121993910/222871169-f4434b91-1970-4c67-9a3c-ba0203bd1f0a.png)
+
++ Adding a resitive load instead of pmos .
++ There is always current flow . Vout=vol .
++ But in this case , the voh always almost to vdd . 
+
+ </details>
+ 
+ <details><summary> General IO </summary> 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/222871366-173d3063-11dd-4c1a-bd36-08719be79e11.png)
+
+ *output logic level*
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/222871408-eae354c7-4948-4cd8-a411-eea355f05a11.png)
+
+ *Input Logic level*
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/222871604-53f6e32e-e826-4299-8276-5579aaa9b3e2.png)
+
+*Connection between the microcontroller and the digital circuit(input logic level)*
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/222871803-a16297df-8291-4274-bf5d-c81ecb14c3e0.png)
+
++ Bidirectional 
++ Output us tx buffer
++ Input buffer is rx buffer
++ pin = pad 
+
+![image](https://user-images.githubusercontent.com/121993910/222871890-3ec2979b-81c4-447a-8f24-2884f11b6fce.png)
+
+*Output Buffer*
+
++ the inverter will drive the output load (Driver)
++ Driver design is very important need to design so that it will be drive the output load .
++ Pin is physical huge dimension lot of capacitance 
++ This can cause the driver not able to drive the output load to high or low since the output capacitance is high .
++ So that it can charge and discharge in short time or smoothly as the Cl cannot change as it is connected to outside . 
+
+![image](https://user-images.githubusercontent.com/121993910/222872237-acb8be4d-73d3-4761-9750-3c58d8af645f.png)
+
++ push or pull means 1 transitor will be on and 1 transistor will be off .
++ Open drain means no pmos .
++ when provide 1 . nmos is off . the pin is floating .
++ not getting high value .
+
+![image](https://user-images.githubusercontent.com/121993910/222872712-a097e282-3e26-453a-b672-b39893d002ef.png)
+
+*use resistive load*
+
++ So that when the nmos is off . The output pin is high . 
++ resitive can be internal inside the circuit  or external resistor is outside the circuit or pin .
+
+![image](https://user-images.githubusercontent.com/121993910/222872911-16c90d07-1d0b-4b06-8dad-4a24046502ad.png)
+
++ Input buffer Rx buffer 
++ If using a inverter a lot more noise is coming from the pin . output maybe unpredicted . 
++ Using schmitt trigger to prevent the noise as it has the low and high threshold point .
++ always floating can be any voltage or at middle .
+
+![image](https://user-images.githubusercontent.com/121993910/222872957-fa3d585e-aa7b-4fba-a5bb-4897680fb9a1.png)
+
++ Floating mode is the problem here if the voltage is at the middle of both transistor may on . Therefore got leakage .
++ Connected the pin to vdd or gnd to prevent leakage .
+
+ </details>
+ 
+ <details><summary> TX driver </summary>
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/222873184-4207ce97-2979-49be-84e3-0bc7a7c884c6.png)
+
++ To drive the load need big inverter . 
++ Increasing size will increase the diffusion capactiance also increases .Bulk to source .
++ Will cause the CL to increase . But also increases on Cin as Cgs nmos and pmos alsi increases . 
++ Becoming the output capacitance of each of the small inverter .
++ Causing Loading Effect . 
++ Therefore using the chain of inverter .
+
+![image](https://user-images.githubusercontent.com/121993910/222873470-fa6136ab-f6e5-4db8-8df5-db4fe306c7ce.png)
+
++ Each subsequent inverter can drive its next inverter or load .
++ But more number of inverter means area increases .
+
+![image](https://user-images.githubusercontent.com/121993910/222873671-589ba100-6886-4d5a-a59b-90f063be9c9f.png)
+
++ interconnect =wire capacitance 
++ Fanout = capcitance due to next load or device circuits .
+
+![image](https://user-images.githubusercontent.com/121993910/222873707-c15b7c7b-1169-4845-9120-4bfcb5c1936c.png)
+
++ Tp decrease as Size increases .
++ But at certain point this is not valid . As Self loading come eventually tp increases as well.
+
+![image](https://user-images.githubusercontent.com/121993910/222873975-d96e16c9-ce86-422a-8515-c62764243830.png)
+
+![image](https://user-images.githubusercontent.com/121993910/222874015-fe043425-ad75-4846-a445-044fb0376f88.png)
+
+![image](https://user-images.githubusercontent.com/121993910/222874241-3b9e5263-45c1-444c-b4fe-4a303a5a8edd.png)
+
+![image](https://user-images.githubusercontent.com/121993910/222874259-7e32d27a-4d29-47c0-ba51-2fe85c2c741a.png)
+
+</details>
+  </details>
