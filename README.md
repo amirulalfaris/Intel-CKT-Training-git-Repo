@@ -112,6 +112,17 @@
     
      [General Purpose Input and Output (GPIO) Design]()
         </details>
+        
++ **[Day 13 - CMOS Schmitt Trigger]()**
+     <details><summary> Theory </summary>
+    
+     [CMOS Schmitt Trigger]()
+        </details>
+       
+     <details><summary> Assignment 13 </summary>
+    
+     [Assignment day 13]()
+     </details>        
        
              
 ## Day 1
@@ -1598,5 +1609,87 @@ NMl = VIL - VOL
 
 ![image](https://user-images.githubusercontent.com/121993910/222874259-7e32d27a-4d29-47c0-ba51-2fe85c2c741a.png)
 
+</details>
+  </details>
+  
+## Day 13
+## Theory - CMOS Schmitt Trigger
+
+<details><summary> Schmitt Trigger </summary>
+ 
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/121993910/222880415-9c8c46a8-cb37-483b-85a5-87f10e829d9c.png">
+
+ + Since this circuit has two threshold voltage it able to reduce the noise much better .
+ + a Schmitt trigger is a comparator circuit with hysteresis implemented by applying positive feedback to the noninverting input of a comparator or differential amplifier.
+ 
+<img width="567" alt="image" src="https://user-images.githubusercontent.com/121993910/222880799-b4be8421-2cb6-4ecc-84b0-3883c2065893.png">
+
+ + Example inverter which has a single threshold value .
+ + If there is noise on the input . The output also will change accorcdingly . 
+ + Causing unwanted output .
+ + Example of inverter with symmertrical . Vth is at the middle .
+ 
+ <img width="576" alt="image" src="https://user-images.githubusercontent.com/121993910/222880861-716109a0-d1b6-44ab-ad83-01d5d481320b.png">
+ 
+ + Increasing the vt of PMOS . Able to reduce the noise when vin is low but not all case . 
+ + If there is a noise when vin is high , the output will still change .
+ 
+ <img width="694" alt="image" src="https://user-images.githubusercontent.com/121993910/222880986-3295486f-64a7-4600-b2e4-8dcf71cb4eae.png">
+
++ Same concept but increasing the vt of nmos .
+ 
+ <img width="575" alt="image" src="https://user-images.githubusercontent.com/121993910/222881178-2e6cac61-4375-4c03-a5ba-b9a1a36ca6e8.png">
+
+ + When input 0-1 . Output will change at higher vth.
+ + When Input 1-0 . Output will change at lower vth . 
+ + Hysterysis 
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/222881272-a8a22e0b-d4bd-435a-96d2-da86ddbe0143.png)
+ 
+ + Adding the P2 and N2 will cause our circuit to have 2 vt point . 
+ + if No P2 and N2 . The circuit behave like a normal inverter . B2/B0 = 0 .
+ + Increasing the width of P2 and N2 will increasing the trip point . 
+
+ ![image](https://user-images.githubusercontent.com/121993910/222881712-a97c31b3-c39e-4092-b132-eeee7c430214.png)
+
+ *Transitor region*
+ 
+ + How the transitor behave from 0-vdd and vdd-0 
+ + The region will help to understand the transitor operation easily .
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/222881785-97f87556-dbb2-497c-9897-c9ad702d21e5.png)
+
++ When input is from 0 to Vdd .
++ When input is 0 . Nmos if off .(Region1)
++ V0 is equal to vdd . causing the N2 to turn on also passing Vdd to Vx in saturation region. 
++ But slowly increasing the input from 0 . 
++ N0 will turn on in saturation region . meanwhile the N1 is cutoff and N2 is still in saturation region . (Region 2)
++ Since Vx(Vdd during this time) is higher than the input V1 (Slowly increasing from 0) . N1 is in cutoff region.
++ There is still no path from the output/vdd  to the gnd .
++ Output still stay high . 
+ 
++ If we increase more voltage on the input . (Region 3) 
++ Vx node will decrease and V1 increase . 
++ Causing the Vgs for n1 increase . 
++ At one point it will turn on in saturation region . 
++ Causing the output will go down . 
++ But to get the output to go down . A lot of voltage is required to on the n1 compare to normal inveter. (Upper threshold point)
++ Above the treshold point path is created and vout will go down .
+ 
+<img width="576" alt="image" src="https://user-images.githubusercontent.com/121993910/222882313-eafa1d50-7069-4351-b165-2ee2fa0f5d14.png">
+
++ When input is from Vdd to 0 .
++ When the input is vdd , the output is 0 . (Region 4)
++ PMOS P0 and P1 is off . P2 is in saturation .
++ As we decrease the input from vdd slowly . (Region 5)
++ P0 is turn on as Vsg > vt . P0 conduct but P1 is still in cutoff region .
++ Vy will increase as current flow from Vdd --> P0 --> P2 . as P1 is off .
++ As Vy is slowly increasing . At one point will cause the P1 to turn on also .
++ Because Vsg1>vt1 . So output will charge to vdd .
++ To turn the output from 0 to 1 . It take much time/voltage compare to normal inverter .
++ Difference between vthl and vthl is hysterysis voltage .which is depends on the width / strength of the transitor .
++ this is the usage of P2 and N2. 
+ 
+ 
 </details>
   </details>
