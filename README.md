@@ -124,7 +124,17 @@
      [Assignment day 13]()
      </details>        
        
-             
++ **[Day 14 - Current Mirror]()**
+     <details><summary> Theory </summary>
+    
+     [Current Mirror]()
+        </details>
+       
+     <details><summary> Assignment 14 </summary>
+    
+     [Assignment day 14]()
+     </details>
+     
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -1690,6 +1700,101 @@ NMl = VIL - VOL
 + Difference between vthl and vthl is hysterysis voltage .which is depends on the width / strength of the transitor .
 + this is the usage of P2 and N2. 
  
- 
 </details>
   </details>
+  
+  ## Day 14
+## Theory - Current Mirror
+
+<details><summary> Introduction </summary>
+
+![image](https://user-images.githubusercontent.com/121993910/223712444-a4aa620f-7535-4be0-b2ad-bb0050359ef5.png)
+
++ commonly used to replicate current from one branch of the circuit to another, but it can also be used as a biasing network or as a “pseudo” current source
++ M1 and M2 are MOSFETs with same area process, and VGS, IREF is the current we are trying to mirror and Iout is the mirrored current.
++ Since the gate of M1 and M2 are shorted, both MOSFETs experience the same Vov, VGS-VTH
++ Operation of current mirrors is based on the governing equation of MOSFET current in saturation
++ Based on the Id,sat, one can see that the current is modeled by the square of overdrive voltage, VOV = VGS – VTH.
++ same process and overdrive voltage
++ the current flowing through the
++ MOSFETs should be equivalent if they have the same width and length 
++ assuming negligible channel length modulation
++ Some non-idealities such as process variation, VDS difference, and VTH mismatchmay cause current mismatches. 
++ Mismatches in current mirror topology is referred to as the current difference between the reference current, IREF and the output current, IOUT
++  causes of current mismatches can be summarized into the following three categories: Process Variation, threshold voltage mismatches
+(Vth), and drain to source voltage difference (VDS).
+
+
+</details>
+
+<details><summary> Factor of current mismatch </summary>
+
+**Process Variations**
+
++ mismatch in geometry of each MOSFETs.
++ Due to limitation of certain process .
++ The design geometry might be different than the actual thing.
++ The oxide thickness, width, and length of each MOSFET varies from ie to die and wafer to wafer
+
+![image](https://user-images.githubusercontent.com/121993910/223716068-e66dd9dd-8b1f-412c-a1e5-1f09f12bf3f3.png)
+
+**Threshold Voltage Difference**
+
++ A change in VTH directly impact how saturated the devices.
++ This difference in threshold voltage is a result of body effect and non-idealities in doping concentration on the substrate and wells.
++ In addition to intrinsic parameter, a variation in threshold voltage can also be realized as difference in effective VGS.
++ VGS may differ for each device with the presence of parasitic resistance along the interconnects .
+
+**Drain to Source voltage Difference**
+
++ Ideally, VDS does not have an impact on device biasing point; however, due to channel length modulation.
++ The drain current IDS varies with change in drain to source voltage across the device
++ This phenomenon is observed often in short channel devices and becomes more obvious as the as channel length goes under 180nm
+
+![image](https://user-images.githubusercontent.com/121993910/223719387-c3bdfa19-a2a3-4ce6-ad16-19c0d13f1732.png)
+ 
++ To reduce the VDS variation, the designer can choose a longer length for the device.
++ Another technique is to implement a cascoded current mirror . 
++ By having a cascode, the VDS of Q2 will follow VDS of Q1, so the current mirror will significantly reduce the VDS difference between Q1 and Q2.
++ if voltage at D2 were to increase causing an increase in the output current IO, the VGS of Q4 will reduce limiting the current that Q2 is trying to increase.
++ This way IO will be kept very close to the Iref in a small feedback loop.
++ In addition, a cascoded device has high output impedance ~gm4ro4ro2making the mirror current acting more like an ideal current source.
++ One downside of cascoded device is the voltage headroom .
++ In order for Q4 and Q2 to be in saturation, the output voltage must be at least 2VGS – VTH or 2VDS,SAT + VTH.
++ As a rule of thumb in cascode mirrors, it As the best to size Q2 and Q1 as long channels.
+
+![image](https://user-images.githubusercontent.com/121993910/223725011-58cff154-07c8-494b-8d7c-7750c66c45df.png)
+
+</details>
+
+<details><summary> Application </summary>
+
+**Scale W2/W1 to save power**
+
++ In typical current mirror design, W2/W1 are not always 1:1
++ Since the gate voltage of diode-tied (Gate tied to drain) MOSFET is biased with IREF
++ this will create a voltage level for the output branch to mirror and the ratio W2/W1 can be easily changed to save power
++ For example, if the required IOUT is 5 mA, instead of also driving the reference branch with IREF = 5 mA.
++ we can simply reduce IREF to 1 mA and change the W2/W1 ratio to 5:1 while keeping the length identical.
++ This way IOUT is 5 mA with IREF only to be 1 mA to save power on the reference branch, and vice versa if you want a smaller IOUT
++ however, as the ratio increases, the mismatch also increases. Typically a mirror ratio <10 is generally acceptable.
+
+![image](https://user-images.githubusercontent.com/121993910/223728185-7a3e4e69-e19a-4062-b3e3-9bb71aa3455e.png)
+
+**Distribute Mirror reference current to multiple output branches**
+
++ A single reference branch can also be used to mirror multiple branches as the circuit may need
++ the mirrored branch can be used to mirror more branches
++ However, do note that the more you mirror, the greater the error may show in current matching.
+
+![image](https://user-images.githubusercontent.com/121993910/223728731-8c146c0b-d53d-41be-b4cf-7723b11b8788.png)
+
+<details><summary>  PMOS Current Mirror </summary>
+
++ PMOS can also be used for mirroring
++ The only structure difference between PMOS mirroring and NMOS mirroring is the placement of IREF, to source current or sink current.
+ 
+ ![image](https://user-images.githubusercontent.com/121993910/223729260-1962c2ad-2e2e-442a-8354-2f074ce57780.png)
+
+</details>
+ </details>
