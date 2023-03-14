@@ -135,6 +135,17 @@
      [Assignment day 14]()
      </details>
      
++ **[Day 15 - Single Ended and Differential Amplifier]()**
+     <details><summary> Theory </summary>
+    
+     [Single Ended and Differential Amplifier]()
+        </details>
+       
+     <details><summary> Assignment 15 </summary>
+    
+     [Assignment day 15]()
+     </details>     
+     
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -1795,6 +1806,50 @@ NMl = VIL - VOL
 + The only structure difference between PMOS mirroring and NMOS mirroring is the placement of IREF, to source current or sink current.
  
  ![image](https://user-images.githubusercontent.com/121993910/223729260-1962c2ad-2e2e-442a-8354-2f074ce57780.png)
+
+</details>
+ </details>
+ 
+ 
+ ## Day 15
+## Theory - Single Ended and Differential Amplifier 
+
+<details><summary> Single Ended Amplifer </summary>
+
+
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/121993910/224928683-b2537292-7c79-48fb-82be-b6880baa1f5b.png">
+
++ Small signal model of the mosfet is useful when the mosfet is used as an amplifier 
++ Transconductance(gm) - The MOSFET transconductance is the ratio of change in the drain current to the change in the voltage Vgs. (Gate to Source Voltage) 
++ for the given change in the gate to source voltage, what is the change in the drain current.
++ More changes in Vgs will give more change in Id . gm =d(Id)/d(Vgs)
++ To be as an amplifer the mosfet need to be in saturation region act as a voltage control current source .
++ This is due to the Id is a function of Vgs .
+
+
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/121993910/224931243-e1edd7b3-5206-43c3-acbb-4bbc3b2cf329.png">
+
+*Vdc voltage biasing the circuit such as it will conduct to saturation + Ac input is apllied*
+
++ Due to small signal model or aproximation . The Ac input will be directly proportional to the Id .
+
+<img width="597" alt="image" src="https://user-images.githubusercontent.com/121993910/224933312-652a6a33-04d6-4df5-b2f0-9910d9d92557.png">
+
+*Small signal model of MOSFET only*
+
+<img width="914" alt="image" src="https://user-images.githubusercontent.com/121993910/224934110-22f97d20-f70d-403e-a5e5-b82356505da3.png">
+
+*Small signal model for the Mosfet as amplifier*
+
++ Rds in this case is neglected as it is very high . Can also be included in the model which will be parallel with the R .
++ Due to the R , the gain obtain is quite small . 
++ Therefore, can replace the resistance to mosfet to get better resistance and improved the gain .
++ Using less transitor aslo can reduce the area .
++ Therefore the Rout will become Rds || Rds .
+
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/121993910/224938301-ad9fbaf6-55f2-4cd5-ae26-0471bd1c1427.png">
+
+
 
 </details>
  </details>
