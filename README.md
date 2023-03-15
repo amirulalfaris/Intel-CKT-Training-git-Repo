@@ -1866,4 +1866,46 @@ NMl = VIL - VOL
  
 
 </details>
+
+<details><summary> Differential Amplifer </summary>
+
++ A differential amplifier amplifies the difference between the two input signals
+
+<img width="281" alt="image" src="https://user-images.githubusercontent.com/121993910/225263401-b2c716f5-ea78-4837-97d8-8025faaf8054.png">
+
+*Single ended signal vs differential signal*
+
++ Single ended signal measure bewtween one particular node to the ground .
++ Differential signal measure between two particular node in the circuit .
++ Differential signal has the advantages which can help to reduce noise/interference .
+
+<img width="860" alt="image" src="https://user-images.githubusercontent.com/121993910/225264485-a0fab161-ba3f-42b7-af4b-20dbadbfdc6b.png">
+
+*Single ended amplifier(Supply may affected by noise causing the output also have noise)*
+
+<img width="599" alt="image" src="https://user-images.githubusercontent.com/121993910/225265430-58eaf8fd-0973-4182-a9fd-ce88c48c8d56.png">
+
+*Noise cancel each other from the first and second amplifier*
+
++ Both of these amplifier have the same characteristic
++ The input is 180 phase degree apart .
+
+<img width="864" alt="image" src="https://user-images.githubusercontent.com/121993910/225266712-95e80334-ba77-4bec-a5cf-16b9d55364d7.png">
+
+*2 identical common source amplifier=differential amplifier*
+
++ Should be identical in all sence = Both of the mosfet have the same device characteristic.
++ Mosfet should operate in saturation region as we used it as amplification
++ The drain current may get affected as the common mode signal some time may change or have noise(also effect the gm) . 
++ To avoid this use the current source or current mirror .
+
+
+<img width="794" alt="image" src="https://user-images.githubusercontent.com/121993910/225268547-c5108f06-8544-41be-9989-0c9c10cc5db6.png">
+
+[Reference taken from](https://www.youtube.com/watch?v=IYR-FxjAym0&t=282s)
+
++ The current source and resistor can be change using the current mirror 
++ 
+
+</details>
  </details>
