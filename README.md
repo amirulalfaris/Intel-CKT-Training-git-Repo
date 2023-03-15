@@ -1848,8 +1848,22 @@ NMl = VIL - VOL
 + Therefore the Rout will become Rds || Rds .
 
 <img width="200" alt="image" src="https://user-images.githubusercontent.com/121993910/224938301-ad9fbaf6-55f2-4cd5-ae26-0471bd1c1427.png">
+ 
+ **High Frequency Responce**
 
+ <img width="870" alt="image" src="https://user-images.githubusercontent.com/121993910/224996261-27f8c643-6901-4b2b-ae0b-2c36fc58453c.png">
+ 
+ *Intrinsic capcitance of the MOSFET*
 
+<img width="876" alt="image" src="https://user-images.githubusercontent.com/121993910/225000833-a4949acd-c1f8-4095-895e-34821fb74fd0.png">
+
+ *High frequency responce for the amplifier small singal model *
+ 
+ + The intrinsic capacitance will take into account . 
+ + Theses capacitance causing the gain to drop/reduce . 
+ + Gain will change as this capacitance take into effect .
+ + if one pole it will reduce to -20db/decade if two pole the first one still -20db/decade but the 2nd pole will be -40db/decade
+ 
 
 </details>
  </details>
