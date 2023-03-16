@@ -1881,7 +1881,7 @@ NMl = VIL - VOL
 
 <img width="860" alt="image" src="https://user-images.githubusercontent.com/121993910/225264485-a0fab161-ba3f-42b7-af4b-20dbadbfdc6b.png">
 
-*Single ended amplifier(Supply may affected by noise causing the output also have noise)*
+*Single ended amplifier(Supply/vin  may affected by noise causing the noise to be amplify also at the output)*
 
 <img width="599" alt="image" src="https://user-images.githubusercontent.com/121993910/225265430-58eaf8fd-0973-4182-a9fd-ce88c48c8d56.png">
 
@@ -1905,7 +1905,20 @@ NMl = VIL - VOL
 [Reference taken from](https://www.youtube.com/watch?v=IYR-FxjAym0&t=282s)
 
 + The current source and resistor can be change using the current mirror 
-+ 
+
+![image](https://user-images.githubusercontent.com/121993910/225595475-472586a0-553b-42df-ae08-9193b623a879.png)
+
+*Example circuit using current mirror(LHS), (RHS) deriving the gain and Rout using half of the circuit only (low frequency)*
+
+![image](https://user-images.githubusercontent.com/121993910/225596923-a7888d4d-31d4-487a-8c70-f7d7b2964dee.png)
+
+*High frequncy responce , paracitic capacitance will take into account. Bode plot*
+
+![image](https://user-images.githubusercontent.com/121993910/225601371-516a6d05-6255-4d09-80e9-c1edc1b20e83.png)
+
+*Amplifier with current mirror load*
+
+
 
 </details>
  </details>
