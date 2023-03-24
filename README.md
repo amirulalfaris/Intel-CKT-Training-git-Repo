@@ -135,16 +135,22 @@
      [Assignment day 14](https://docs.google.com/document/d/10BLNUd9nra8szjg78iMkQCMY9-cWljVi/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>
      
-+ **[Day 15 - Single Ended and Differential Amplifier]()**
++ **[Day 15 - Single Ended and Differential Amplifier](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-15)**
      <details><summary> Theory </summary>
     
-     [Single Ended and Differential Amplifier]()
+     [Single Ended and Differential Amplifier](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-15)
         </details>
        
      <details><summary> Assignment 15 </summary>
     
-     [Assignment day 15]()
+     [Assignment day 15](https://docs.google.com/document/d/12_tlr7Tdzi4cmL6jII1cFQZQm-fKRvBY/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>     
+     
++ **[Day 16 - Two Stage Amplifier ()**
+     <details><summary> Assignment 16 </summary>
+    
+     [Assignment day 16](https://docs.google.com/document/d/1WzVnk8HaUTT4ZoaXtAxSZdaw5sIFNrUj/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
+        </details>     
      
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
