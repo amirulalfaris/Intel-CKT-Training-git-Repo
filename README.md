@@ -93,7 +93,7 @@
        
      <details><summary> Assignment </summary>
     
-     [Assignment day 9]()
+     [Assignment day 9](https://docs.google.com/document/d/1D_c1XslkELlRXpFOIjUZHSLhMVUP-QyX/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>
      
 + **[Day 10 - Sequential Digital Logic Circuits](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-10)**
@@ -104,7 +104,7 @@
        
      <details><summary> Assignment 10 </summary>
     
-     [Assignment day 10]()
+     [Assignment day 10](https://docs.google.com/document/d/1f0jKEOfBG2Upsuydzh7pFdhV6bSLJfFK/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>     
      
 + **[Day 12 - General Purpose Input and Output (GPIO) Design]()**
