@@ -124,10 +124,10 @@
      [Assignment day 13](https://docs.google.com/document/d/10BLNUd9nra8szjg78iMkQCMY9-cWljVi/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>        
        
-+ **[Day 14 - Current Mirror]()**
++ **[Day 14 - Current Mirror](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-14)**
      <details><summary> Theory </summary>
     
-     [Current Mirror]()
+     [Current Mirror](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-14)
         </details>
        
      <details><summary> Assignment 14 </summary>
