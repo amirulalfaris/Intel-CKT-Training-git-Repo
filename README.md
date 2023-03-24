@@ -107,10 +107,10 @@
      [Assignment day 10](https://docs.google.com/document/d/1f0jKEOfBG2Upsuydzh7pFdhV6bSLJfFK/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>     
      
-+ **[Day 12 - General Purpose Input and Output (GPIO) Design]()**
++ **[Day 12 - General Purpose Input and Output (GPIO) Design](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-12)**
      <details><summary> Theory </summary>
     
-     [General Purpose Input and Output (GPIO) Design]()
+     [General Purpose Input and Output (GPIO) Design](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-12)
         </details>
         
 + **[Day 13 - CMOS Schmitt Trigger]()**
