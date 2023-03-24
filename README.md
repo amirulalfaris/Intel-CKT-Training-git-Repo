@@ -113,15 +113,15 @@
      [General Purpose Input and Output (GPIO) Design](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-12)
         </details>
         
-+ **[Day 13 - CMOS Schmitt Trigger]()**
++ **[Day 13 - CMOS Schmitt Trigger](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-13)**
      <details><summary> Theory </summary>
     
-     [CMOS Schmitt Trigger]()
+     [CMOS Schmitt Trigger](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-13)
         </details>
        
      <details><summary> Assignment 13 </summary>
     
-     [Assignment day 13]()
+     [Assignment day 13](https://docs.google.com/document/d/10BLNUd9nra8szjg78iMkQCMY9-cWljVi/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>        
        
 + **[Day 14 - Current Mirror]()**
@@ -132,7 +132,7 @@
        
      <details><summary> Assignment 14 </summary>
     
-     [Assignment day 14]()
+     [Assignment day 14](https://docs.google.com/document/d/10BLNUd9nra8szjg78iMkQCMY9-cWljVi/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>
      
 + **[Day 15 - Single Ended and Differential Amplifier]()**
