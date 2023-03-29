@@ -146,10 +146,10 @@
      [Assignment day 15](https://docs.google.com/document/d/12_tlr7Tdzi4cmL6jII1cFQZQm-fKRvBY/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>     
      
-+ **[Day 16 - How to Design the Differential Amplfier & Two Stage Amplifier ()**
++ **[Day 16 - How to Design the Differential Amplfier & Two Stage Amplifier (https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-16)**
      <details><summary> Theory </summary>
     
-     [How to Design the Differential Amplfier & Two Stage Amplifier]()
+     [How to Design the Differential Amplfier & Two Stage Amplifier](https://github.com/amirulalfaris/Intel-CKT-Training-git-Repo#day-16)
         </details>
 
      <details><summary> Assignment 16 </summary>
@@ -1952,7 +1952,7 @@ Tutorial or reference for designing differential Amplifier
 
 </details>
 
-<details><summary> How To Design Differntial Amplifier </summary>
+<details><summary> How To Design Two Stage Amplifier / Op-Amp </summary>
  
  + Limitation of Differential Amplifier is low gain .
  + Introduced the 2nd stage amplifier (Op-Amp)
