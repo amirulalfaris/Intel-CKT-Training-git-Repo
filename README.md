@@ -146,7 +146,12 @@
      [Assignment day 15](https://docs.google.com/document/d/12_tlr7Tdzi4cmL6jII1cFQZQm-fKRvBY/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
      </details>     
      
-+ **[Day 16 - Two Stage Amplifier ()**
++ **[Day 16 - How to Design the Differential Amplfier & Two Stage Amplifier ()**
+     <details><summary> Theory </summary>
+    
+     [How to Design the Differential Amplfier & Two Stage Amplifier]()
+        </details>
+
      <details><summary> Assignment 16 </summary>
     
      [Assignment day 16](https://docs.google.com/document/d/1WzVnk8HaUTT4ZoaXtAxSZdaw5sIFNrUj/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
@@ -1924,7 +1929,27 @@ NMl = VIL - VOL
 
 *Amplifier with current mirror load*
 
+</details>
+ </details>
+ 
+  ## Day 16
+## Theory - How to Design Differential Amplifier & two Stage Amplifier  
 
+<details><summary> How To Design Differntial Amplifier </summary>
+
++ From the Specs given .
++ step 1 = Io can be find using the Slew Rate .
++ step 2 = ICMR+ can be used to find the (W/L)3 & (W/L)4
++ step 3 = From the BW gain can find the (W/L)1 & (W/L)2
++ step 4 = ICMR0 can be used to find the (W/L)5 & (W/L)6.
+
+**If not able to achieve the gain**
++ Can increase the (W/L)1 & (W/L)2 to increase the gm .
++ Increase the rds4 and rds2 . can inrease the Length of M4 and M2 so that lambda decrease gds decrease and rout increase .
+
+Tutorial or reference for designing differential Amplifier 
+[Diffential Amplifier Design](https://www.youtube.com/watch?v=Qbx0YI6UjoE)
 
 </details>
  </details>
+
