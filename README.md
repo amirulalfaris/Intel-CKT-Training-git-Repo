@@ -1951,5 +1951,39 @@ Tutorial or reference for designing differential Amplifier
 [Diffential Amplifier Design](https://www.youtube.com/watch?v=Qbx0YI6UjoE)
 
 </details>
+
+<details><summary> How To Design Differntial Amplifier </summary>
+ 
+ + Limitation of Differential Amplifier is low gain .
+ + Introduced the 2nd stage amplifier (Op-Amp)
+ 
+ <img width="435" alt="image" src="https://user-images.githubusercontent.com/121993910/228405771-3cb5cc9c-afc1-408c-ac7d-457ee94b4c0c.png">
+
+ *Two stage Amplifier*
+ 
+ <img width="463" alt="image" src="https://user-images.githubusercontent.com/121993910/228406363-2ee646c0-81d7-4978-895c-a26cf918b58b.png">
+
+ *Bode plot and phase plot of the two stage amplifier*
+ 
+ <img width="507" alt="image" src="https://user-images.githubusercontent.com/121993910/228406557-8a3ddc5e-17f4-4cd1-b770-4c517534facc.png">
+
+ *Compensation effect*
+ 
+ + Compensation is done by adding the Cc
+ + To increase the phase margin to get a stable system at least 60 degree . 
+ + Pulling the P1 closer and pushing the P2 after the BW . 
+ 
+ **How to Design the two stage amplifier*
+ 
+ <img width="502" alt="image" src="https://user-images.githubusercontent.com/121993910/228408310-048f73a2-3613-4b4a-8856-9797e4d0dcc7.png">
+
+ <img width="391" alt="image" src="https://user-images.githubusercontent.com/121993910/228408359-5ae3b4e8-92bf-40ad-86eb-16ba02253a29.png">
+
+ <img width="402" alt="image" src="https://user-images.githubusercontent.com/121993910/228408390-08441a5f-8a7d-42f9-93ea-7393d10e47f5.png">
+
+Reference for designing the two stage amplifier 
+[Two Stage Amplifier Design](https://www.youtube.com/watch?v=JBiMdEb6t-Q)
+ 
+</details> 
  </details>
 
