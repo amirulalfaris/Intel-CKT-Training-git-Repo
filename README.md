@@ -156,7 +156,13 @@
     
      [Assignment day 16](https://docs.google.com/document/d/1WzVnk8HaUTT4ZoaXtAxSZdaw5sIFNrUj/edit?usp=sharing&ouid=110064100622421144823&rtpof=true&sd=true)
         </details>     
-     
+
++ **[Day 17 - Folded Cascode Operational Amplifier]()**
+     <details><summary> Theory </summary>
+    
+     [Folded Cascode Operational Amplifier]()
+        </details>
+
 ## Day 1
 ## Theory - Fundamentals of VLSI Design and overview of Sand-to-Silicon
 
@@ -1984,6 +1990,73 @@ Tutorial or reference for designing differential Amplifier
 Reference for designing the two stage amplifier 
 [Two Stage Amplifier Design](https://www.youtube.com/watch?v=JBiMdEb6t-Q)
  
+</details> 
+ </details>
+
+## Day 17
+## Theory - Folded Cascode Operational Amplifier  
+
+<details><summary> Introduction </summary>
+
+![image](https://user-images.githubusercontent.com/121993910/230529913-ddab5a03-9652-4926-9a37-7ede25dc9008.png)
+
+*Limitation of Op-Amp*
+
++ Insufficient gain - some amplication that need more gain .
++ Power PSSR - Noise from vdd propagate to the output , as in high frequency the miller capacitance is shorted . Noise propagate from vdd - Cgs - input - output .
++ Limited stable bandwidth - due to 2 pole system , the system is unstable . 
++ Miller compensation comes to compensate/improve  the phase margin as the system will not be in amplification but oscillation. 
++ By doing the miller compensation the pole1 will move to the right and p2 move the right . to get good or stable bandwidth.
+
+![image](https://user-images.githubusercontent.com/121993910/230530675-5dfdca82-2c3a-43a1-b2f3-47fb833e7d83.png)
+
+*Motivation why using folded cascode* 
+
++ More stage will cause more unstable as more pole is introduced . Might be oscillation instead of amplification.
++ Incresing gm will increased the bias current means increase power consumption.
++ But increasing Rout can be done as increasing Rout will decrease the current . Rout = 1/(Lambda)(Id)
++ Increasing Rout by using cascode design. 
+
+**Cascode Topologies**
+
++ Cascoding to the first stage - Using cascode configuration on 1st stage without any 2nd stage .
++ Cascoding to the first stage followed by the 2nd stage - Using cascode configuration on 1st stage with 2nd stage . but two pole system cause unstable .
++ Folded Cascode - Able to give high gain and save compensation .
+
+![image](https://user-images.githubusercontent.com/121993910/230531290-ea45ac80-75a3-4dc6-8ca3-091daa1a2e48.png)
+
+*First Stage Cascode*
+
+**Left Hand side diagram**
+
++ Using pmos wide swing current mirror .
++ MC1 - MC4 is for cascode purpose - To get high resistance at the output .
+
+**Right Hand Side diagram**
+
++ Mb1 - MB5 is used for biasing purpose for MC1-MC4
++ MB3 and MB4 is simple current mirror  
+
+![image](https://user-images.githubusercontent.com/121993910/230531559-2d2a2c5c-9228-4394-90bc-c10fad56844d.png)
+
+*Benefit using the first stage cascoding*
+
+![image](https://user-images.githubusercontent.com/121993910/230531665-a4ed3953-c467-4bfe-855c-9461e615ebcb.png)
+
+*first stage cascoding followed by 2nd stage*
+
++ Using self bias cascode current mirror
++ Mt2 and mt1 is a level shifter . So that the output has more swing extra one vt swing .
++ Still using miller compensation for good phase margin .
++ PSSR degrade since using miller cap.
+
+![image](https://user-images.githubusercontent.com/121993910/230531992-db10db47-07cd-484d-b2bd-132823e167d5.png)
+
+*2nd stage cascoding only*
+
++ Pole decreases as we increase the gain = Pole = 1/RC 
++ Pssr is due vdd noise . Couple through Cgs cap and at high frequency the Ccc is short so the noise propagate to the input and then output  . 
+
 </details> 
  </details>
 
